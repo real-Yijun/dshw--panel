@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>5&nbsp; Robustness Checks – 上市公司资本结构影响因素分析</title>
+<title>Robustness Checks – 上市公司资本结构影响因素分析</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -116,7 +116,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../src/robustness.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Robustness Checks</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../src/robustness.html"><span class="chapter-title">Robustness Checks</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -143,38 +143,32 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">上市公司资本结构影响因素分析</span></span></a>
+  <a href="../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">上市公司资本结构影响因素分析</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../src/intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction &amp; Hypotheses</span></span></a>
+  <a href="../src/intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction &amp; Hypotheses</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../src/data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data &amp; Variables</span></span></a>
+  <a href="../src/data.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data &amp; Variables</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../src/results.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Empirical Results</span></span></a>
+  <a href="../src/results.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Empirical Results</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../src/robustness.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Robustness Checks</span></span></a>
+  <a href="../src/robustness.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Robustness Checks</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../src/conclusion.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Conclusion</span></span></a>
+  <a href="../src/conclusion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Conclusion</span></a>
   </div>
 </li>
     </ul>
@@ -187,34 +181,34 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#本章目标" id="toc-本章目标" class="nav-link active" data-scroll-target="#本章目标"><span class="header-section-number">5.1</span> 本章目标</a></li>
-  <li><a href="#稳健性检验设计" id="toc-稳健性检验设计" class="nav-link" data-scroll-target="#稳健性检验设计"><span class="header-section-number">5.2</span> 稳健性检验设计</a>
+  <li><a href="#本章目标" id="toc-本章目标" class="nav-link active" data-scroll-target="#本章目标">本章目标</a></li>
+  <li><a href="#稳健性检验设计" id="toc-稳健性检验设计" class="nav-link" data-scroll-target="#稳健性检验设计">稳健性检验设计</a>
   <ul class="collapse">
-  <li><a href="#检验维度" id="toc-检验维度" class="nav-link" data-scroll-target="#检验维度"><span class="header-section-number">5.2.1</span> 检验维度</a></li>
+  <li><a href="#检验维度" id="toc-检验维度" class="nav-link" data-scroll-target="#检验维度">检验维度</a></li>
   </ul></li>
-  <li><a href="#变量测量层面的稳健性" id="toc-变量测量层面的稳健性" class="nav-link" data-scroll-target="#变量测量层面的稳健性"><span class="header-section-number">5.3</span> 变量测量层面的稳健性</a>
+  <li><a href="#变量测量层面的稳健性" id="toc-变量测量层面的稳健性" class="nav-link" data-scroll-target="#变量测量层面的稳健性">变量测量层面的稳健性</a>
   <ul class="collapse">
-  <li><a href="#替换因变量mb市场价值杠杆率" id="toc-替换因变量mb市场价值杠杆率" class="nav-link" data-scroll-target="#替换因变量mb市场价值杠杆率"><span class="header-section-number">5.3.1</span> 替换因变量：MB（市场价值杠杆率）</a></li>
-  <li><a href="#替换解释变量roa资产收益率" id="toc-替换解释变量roa资产收益率" class="nav-link" data-scroll-target="#替换解释变量roa资产收益率"><span class="header-section-number">5.3.2</span> 替换解释变量：ROA（资产收益率）</a></li>
+  <li><a href="#替换因变量mb市场价值杠杆率" id="toc-替换因变量mb市场价值杠杆率" class="nav-link" data-scroll-target="#替换因变量mb市场价值杠杆率">替换因变量：MB（市场价值杠杆率）</a></li>
+  <li><a href="#替换解释变量roa资产收益率" id="toc-替换解释变量roa资产收益率" class="nav-link" data-scroll-target="#替换解释变量roa资产收益率">替换解释变量：ROA（资产收益率）</a></li>
   </ul></li>
-  <li><a href="#模型设定层面的稳健性" id="toc-模型设定层面的稳健性" class="nav-link" data-scroll-target="#模型设定层面的稳健性"><span class="header-section-number">5.4</span> 模型设定层面的稳健性</a>
+  <li><a href="#模型设定层面的稳健性" id="toc-模型设定层面的稳健性" class="nav-link" data-scroll-target="#模型设定层面的稳健性">模型设定层面的稳健性</a>
   <ul class="collapse">
-  <li><a href="#增加控制变量" id="toc-增加控制变量" class="nav-link" data-scroll-target="#增加控制变量"><span class="header-section-number">5.4.1</span> 增加控制变量</a></li>
-  <li><a href="#改变标准误聚类方式" id="toc-改变标准误聚类方式" class="nav-link" data-scroll-target="#改变标准误聚类方式"><span class="header-section-number">5.4.2</span> 改变标准误聚类方式</a></li>
+  <li><a href="#增加控制变量" id="toc-增加控制变量" class="nav-link" data-scroll-target="#增加控制变量">增加控制变量</a></li>
+  <li><a href="#改变标准误聚类方式" id="toc-改变标准误聚类方式" class="nav-link" data-scroll-target="#改变标准误聚类方式">改变标准误聚类方式</a></li>
   </ul></li>
-  <li><a href="#样本选择层面的稳健性" id="toc-样本选择层面的稳健性" class="nav-link" data-scroll-target="#样本选择层面的稳健性"><span class="header-section-number">5.5</span> 样本选择层面的稳健性</a>
+  <li><a href="#样本选择层面的稳健性" id="toc-样本选择层面的稳健性" class="nav-link" data-scroll-target="#样本选择层面的稳健性">样本选择层面的稳健性</a>
   <ul class="collapse">
-  <li><a href="#不同时间窗口" id="toc-不同时间窗口" class="nav-link" data-scroll-target="#不同时间窗口"><span class="header-section-number">5.5.1</span> 不同时间窗口</a></li>
-  <li><a href="#剔除特定行业" id="toc-剔除特定行业" class="nav-link" data-scroll-target="#剔除特定行业"><span class="header-section-number">5.5.2</span> 剔除特定行业</a></li>
+  <li><a href="#不同时间窗口" id="toc-不同时间窗口" class="nav-link" data-scroll-target="#不同时间窗口">不同时间窗口</a></li>
+  <li><a href="#剔除特定行业" id="toc-剔除特定行业" class="nav-link" data-scroll-target="#剔除特定行业">剔除特定行业</a></li>
   </ul></li>
-  <li><a href="#内生性问题讨论" id="toc-内生性问题讨论" class="nav-link" data-scroll-target="#内生性问题讨论"><span class="header-section-number">5.6</span> 内生性问题讨论</a>
+  <li><a href="#内生性问题讨论" id="toc-内生性问题讨论" class="nav-link" data-scroll-target="#内生性问题讨论">内生性问题讨论</a>
   <ul class="collapse">
-  <li><a href="#可能的内生性来源" id="toc-可能的内生性来源" class="nav-link" data-scroll-target="#可能的内生性来源"><span class="header-section-number">5.6.1</span> 可能的内生性来源</a></li>
-  <li><a href="#处理策略" id="toc-处理策略" class="nav-link" data-scroll-target="#处理策略"><span class="header-section-number">5.6.2</span> 处理策略</a></li>
-  <li><a href="#滞后解释变量的稳健性检验" id="toc-滞后解释变量的稳健性检验" class="nav-link" data-scroll-target="#滞后解释变量的稳健性检验"><span class="header-section-number">5.6.3</span> 滞后解释变量的稳健性检验</a></li>
+  <li><a href="#可能的内生性来源" id="toc-可能的内生性来源" class="nav-link" data-scroll-target="#可能的内生性来源">可能的内生性来源</a></li>
+  <li><a href="#处理策略" id="toc-处理策略" class="nav-link" data-scroll-target="#处理策略">处理策略</a></li>
+  <li><a href="#滞后解释变量的稳健性检验" id="toc-滞后解释变量的稳健性检验" class="nav-link" data-scroll-target="#滞后解释变量的稳健性检验">滞后解释变量的稳健性检验</a></li>
   </ul></li>
-  <li><a href="#稳健性检验总结" id="toc-稳健性检验总结" class="nav-link" data-scroll-target="#稳健性检验总结"><span class="header-section-number">5.7</span> 稳健性检验总结</a></li>
-  <li><a href="#小结" id="toc-小结" class="nav-link" data-scroll-target="#小结"><span class="header-section-number">5.8</span> 小结</a></li>
+  <li><a href="#稳健性检验总结" id="toc-稳健性检验总结" class="nav-link" data-scroll-target="#稳健性检验总结">稳健性检验总结</a></li>
+  <li><a href="#小结" id="toc-小结" class="nav-link" data-scroll-target="#小结">小结</a></li>
   </ul>
 </nav>
     </div>
@@ -223,7 +217,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Robustness Checks</span></h1>
+<h1 class="title"><span class="chapter-title">Robustness Checks</span></h1>
 </div>
 
 
@@ -240,8 +234,8 @@ window.Quarto = {
 </header>
 
 
-<section id="本章目标" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="本章目标"><span class="header-section-number">5.1</span> 本章目标</h2>
+<section id="本章目标" class="level2">
+<h2 class="anchored" data-anchor-id="本章目标">本章目标</h2>
 <div class="objectives-box">
 <p>本章学习结束后，你将了解：</p>
 <ul>
@@ -252,11 +246,11 @@ window.Quarto = {
 </ul>
 </div>
 </section>
-<section id="稳健性检验设计" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="稳健性检验设计"><span class="header-section-number">5.2</span> 稳健性检验设计</h2>
+<section id="稳健性检验设计" class="level2">
+<h2 class="anchored" data-anchor-id="稳健性检验设计">稳健性检验设计</h2>
 <p>稳健性检验旨在验证基准回归结果是否对模型设定、变量测量、样本选择等变化保持稳定。</p>
-<section id="检验维度" class="level3" data-number="5.2.1">
-<h3 data-number="5.2.1" class="anchored" data-anchor-id="检验维度"><span class="header-section-number">5.2.1</span> 检验维度</h3>
+<section id="检验维度" class="level3">
+<h3 class="anchored" data-anchor-id="检验维度">检验维度</h3>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -290,10 +284,10 @@ window.Quarto = {
 </table>
 </section>
 </section>
-<section id="变量测量层面的稳健性" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="变量测量层面的稳健性"><span class="header-section-number">5.3</span> 变量测量层面的稳健性</h2>
-<section id="替换因变量mb市场价值杠杆率" class="level3" data-number="5.3.1">
-<h3 data-number="5.3.1" class="anchored" data-anchor-id="替换因变量mb市场价值杠杆率"><span class="header-section-number">5.3.1</span> 替换因变量：MB（市场价值杠杆率）</h3>
+<section id="变量测量层面的稳健性" class="level2">
+<h2 class="anchored" data-anchor-id="变量测量层面的稳健性">变量测量层面的稳健性</h2>
+<section id="替换因变量mb市场价值杠杆率" class="level3">
+<h3 class="anchored" data-anchor-id="替换因变量mb市场价值杠杆率">替换因变量：MB（市场价值杠杆率）</h3>
 <p>使用市值杠杆率代替账面杠杆率：</p>
 <p><span class="math display">\[MB_{it} = \frac{\text{总负债}}{\text{总负债} + \text{股权市值}}\]</span></p>
 <table class="caption-top table">
@@ -325,8 +319,8 @@ window.Quarto = {
 </table>
 <p><strong>结论</strong>：NPR 系数依然显著为负，结果稳健。</p>
 </section>
-<section id="替换解释变量roa资产收益率" class="level3" data-number="5.3.2">
-<h3 data-number="5.3.2" class="anchored" data-anchor-id="替换解释变量roa资产收益率"><span class="header-section-number">5.3.2</span> 替换解释变量：ROA（资产收益率）</h3>
+<section id="替换解释变量roa资产收益率" class="level3">
+<h3 class="anchored" data-anchor-id="替换解释变量roa资产收益率">替换解释变量：ROA（资产收益率）</h3>
 <p>使用 ROA 代替 NPR 作为盈利能力指标：</p>
 <p><span class="math display">\[ROA_{it} = \frac{\text{净利润}}{\text{平均总资产}}\]</span></p>
 <table class="caption-top table">
@@ -359,10 +353,10 @@ window.Quarto = {
 <p><strong>结论</strong>：ROA 系数同样显著为负，盈利能力与杠杆率的负向关系稳健。</p>
 </section>
 </section>
-<section id="模型设定层面的稳健性" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="模型设定层面的稳健性"><span class="header-section-number">5.4</span> 模型设定层面的稳健性</h2>
-<section id="增加控制变量" class="level3" data-number="5.4.1">
-<h3 data-number="5.4.1" class="anchored" data-anchor-id="增加控制变量"><span class="header-section-number">5.4.1</span> 增加控制变量</h3>
+<section id="模型设定层面的稳健性" class="level2">
+<h2 class="anchored" data-anchor-id="模型设定层面的稳健性">模型设定层面的稳健性</h2>
+<section id="增加控制变量" class="level3">
+<h3 class="anchored" data-anchor-id="增加控制变量">增加控制变量</h3>
 <p>在基准模型基础上增加以下控制变量：</p>
 <ul>
 <li><strong>Age（企业年龄）</strong>：成立年限的对数</li>
@@ -407,8 +401,8 @@ window.Quarto = {
 </table>
 <p><strong>结论</strong>：增加控制变量后，NPR 系数略有下降但依然高度显著，结果稳健。</p>
 </section>
-<section id="改变标准误聚类方式" class="level3" data-number="5.4.2">
-<h3 data-number="5.4.2" class="anchored" data-anchor-id="改变标准误聚类方式"><span class="header-section-number">5.4.2</span> 改变标准误聚类方式</h3>
+<section id="改变标准误聚类方式" class="level3">
+<h3 class="anchored" data-anchor-id="改变标准误聚类方式">改变标准误聚类方式</h3>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -448,10 +442,10 @@ window.Quarto = {
 <p><strong>结论</strong>：不同标准误结构下，NPR 系数高度稳健（t值从-10.13到-19.31）。</p>
 </section>
 </section>
-<section id="样本选择层面的稳健性" class="level2" data-number="5.5">
-<h2 data-number="5.5" class="anchored" data-anchor-id="样本选择层面的稳健性"><span class="header-section-number">5.5</span> 样本选择层面的稳健性</h2>
-<section id="不同时间窗口" class="level3" data-number="5.5.1">
-<h3 data-number="5.5.1" class="anchored" data-anchor-id="不同时间窗口"><span class="header-section-number">5.5.1</span> 不同时间窗口</h3>
+<section id="样本选择层面的稳健性" class="level2">
+<h2 class="anchored" data-anchor-id="样本选择层面的稳健性">样本选择层面的稳健性</h2>
+<section id="不同时间窗口" class="level3">
+<h3 class="anchored" data-anchor-id="不同时间窗口">不同时间窗口</h3>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -484,8 +478,8 @@ window.Quarto = {
 </table>
 <p><strong>结论</strong>：两个时间窗口的 NPR 系数均显著为负，且2019年后效应更强。</p>
 </section>
-<section id="剔除特定行业" class="level3" data-number="5.5.2">
-<h3 data-number="5.5.2" class="anchored" data-anchor-id="剔除特定行业"><span class="header-section-number">5.5.2</span> 剔除特定行业</h3>
+<section id="剔除特定行业" class="level3">
+<h3 class="anchored" data-anchor-id="剔除特定行业">剔除特定行业</h3>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -515,18 +509,18 @@ window.Quarto = {
 <p><strong>结论</strong>：NPR 系数在不同行业样本中保持稳健。</p>
 </section>
 </section>
-<section id="内生性问题讨论" class="level2" data-number="5.6">
-<h2 data-number="5.6" class="anchored" data-anchor-id="内生性问题讨论"><span class="header-section-number">5.6</span> 内生性问题讨论</h2>
-<section id="可能的内生性来源" class="level3" data-number="5.6.1">
-<h3 data-number="5.6.1" class="anchored" data-anchor-id="可能的内生性来源"><span class="header-section-number">5.6.1</span> 可能的内生性来源</h3>
+<section id="内生性问题讨论" class="level2">
+<h2 class="anchored" data-anchor-id="内生性问题讨论">内生性问题讨论</h2>
+<section id="可能的内生性来源" class="level3">
+<h3 class="anchored" data-anchor-id="可能的内生性来源">可能的内生性来源</h3>
 <ol type="1">
 <li><strong>反向因果</strong>：高杠杆企业可能因财务压力而盈利能力下降</li>
 <li><strong>遗漏变量</strong>：公司战略、管理能力等不可观测因素同时影响盈利与杠杆</li>
 <li><strong>测量误差</strong>：变量测量中的随机误差</li>
 </ol>
 </section>
-<section id="处理策略" class="level3" data-number="5.6.2">
-<h3 data-number="5.6.2" class="anchored" data-anchor-id="处理策略"><span class="header-section-number">5.6.2</span> 处理策略</h3>
+<section id="处理策略" class="level3">
+<h3 class="anchored" data-anchor-id="处理策略">处理策略</h3>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -572,8 +566,8 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="滞后解释变量的稳健性检验" class="level3" data-number="5.6.3">
-<h3 data-number="5.6.3" class="anchored" data-anchor-id="滞后解释变量的稳健性检验"><span class="header-section-number">5.6.3</span> 滞后解释变量的稳健性检验</h3>
+<section id="滞后解释变量的稳健性检验" class="level3">
+<h3 class="anchored" data-anchor-id="滞后解释变量的稳健性检验">滞后解释变量的稳健性检验</h3>
 <p>使用滞后一期的 NPR 作为解释变量：</p>
 <table class="caption-top table">
 <thead>
@@ -602,8 +596,8 @@ window.Quarto = {
 <p><strong>结论</strong>：滞后 NPR 依然显著为负，部分缓解反向因果担忧。</p>
 </section>
 </section>
-<section id="稳健性检验总结" class="level2" data-number="5.7">
-<h2 data-number="5.7" class="anchored" data-anchor-id="稳健性检验总结"><span class="header-section-number">5.7</span> 稳健性检验总结</h2>
+<section id="稳健性检验总结" class="level2">
+<h2 class="anchored" data-anchor-id="稳健性检验总结">稳健性检验总结</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -666,8 +660,8 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="小结" class="level2" data-number="5.8">
-<h2 data-number="5.8" class="anchored" data-anchor-id="小结"><span class="header-section-number">5.8</span> 小结</h2>
+<section id="小结" class="level2">
+<h2 class="anchored" data-anchor-id="小结">小结</h2>
 <div class="callout callout-style-simple callout-note callout-titled" title="本章要点">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1101,12 +1095,12 @@ window.Quarto = {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../src/results.html" class="pagination-link" aria-label="Empirical Results">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Empirical Results</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Empirical Results</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../src/conclusion.html" class="pagination-link" aria-label="Conclusion">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Conclusion</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-title">Conclusion</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

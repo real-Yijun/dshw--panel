@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>4&nbsp; Empirical Results – 上市公司资本结构影响因素分析</title>
+<title>Empirical Results – 上市公司资本结构影响因素分析</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -116,7 +116,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../src/results.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Empirical Results</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../src/results.html"><span class="chapter-title">Empirical Results</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -143,38 +143,32 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">上市公司资本结构影响因素分析</span></span></a>
+  <a href="../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">上市公司资本结构影响因素分析</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../src/intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction &amp; Hypotheses</span></span></a>
+  <a href="../src/intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction &amp; Hypotheses</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../src/data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data &amp; Variables</span></span></a>
+  <a href="../src/data.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data &amp; Variables</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../src/results.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Empirical Results</span></span></a>
+  <a href="../src/results.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Empirical Results</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../src/robustness.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Robustness Checks</span></span></a>
+  <a href="../src/robustness.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Robustness Checks</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../src/conclusion.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Conclusion</span></span></a>
+  <a href="../src/conclusion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Conclusion</span></a>
   </div>
 </li>
     </ul>
@@ -187,45 +181,45 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#本章目标" id="toc-本章目标" class="nav-link active" data-scroll-target="#本章目标"><span class="header-section-number">4.1</span> 本章目标</a></li>
-  <li><a href="#m1-基准回归-优序融资-vs-权衡理论" id="toc-m1-基准回归-优序融资-vs-权衡理论" class="nav-link" data-scroll-target="#m1-基准回归-优序融资-vs-权衡理论"><span class="header-section-number">4.2</span> M1: 基准回归 — 优序融资 vs 权衡理论</a>
+  <li><a href="#本章目标" id="toc-本章目标" class="nav-link active" data-scroll-target="#本章目标">本章目标</a></li>
+  <li><a href="#m1-基准回归-优序融资-vs-权衡理论" id="toc-m1-基准回归-优序融资-vs-权衡理论" class="nav-link" data-scroll-target="#m1-基准回归-优序融资-vs-权衡理论">M1: 基准回归 — 优序融资 vs 权衡理论</a>
   <ul class="collapse">
-  <li><a href="#模型设定" id="toc-模型设定" class="nav-link" data-scroll-target="#模型设定"><span class="header-section-number">4.2.1</span> 模型设定</a></li>
-  <li><a href="#两步估计法twfe与交互固定效应ife" id="toc-两步估计法twfe与交互固定效应ife" class="nav-link" data-scroll-target="#两步估计法twfe与交互固定效应ife"><span class="header-section-number">4.2.2</span> 两步估计法（TWFE）与交互固定效应（IFE）</a></li>
-  <li><a href="#结果解读" id="toc-结果解读" class="nav-link" data-scroll-target="#结果解读"><span class="header-section-number">4.2.3</span> 结果解读</a></li>
-  <li><a href="#控制变量结果" id="toc-控制变量结果" class="nav-link" data-scroll-target="#控制变量结果"><span class="header-section-number">4.2.4</span> 控制变量结果</a></li>
+  <li><a href="#模型设定" id="toc-模型设定" class="nav-link" data-scroll-target="#模型设定">模型设定</a></li>
+  <li><a href="#两步估计法twfe与交互固定效应ife" id="toc-两步估计法twfe与交互固定效应ife" class="nav-link" data-scroll-target="#两步估计法twfe与交互固定效应ife">两步估计法（TWFE）与交互固定效应（IFE）</a></li>
+  <li><a href="#结果解读" id="toc-结果解读" class="nav-link" data-scroll-target="#结果解读">结果解读</a></li>
+  <li><a href="#控制变量结果" id="toc-控制变量结果" class="nav-link" data-scroll-target="#控制变量结果">控制变量结果</a></li>
   </ul></li>
-  <li><a href="#m2-分组回归-soe-vs-non-soe" id="toc-m2-分组回归-soe-vs-non-soe" class="nav-link" data-scroll-target="#m2-分组回归-soe-vs-non-soe"><span class="header-section-number">4.3</span> M2: 分组回归 — SOE vs Non-SOE</a>
+  <li><a href="#m2-分组回归-soe-vs-non-soe" id="toc-m2-分组回归-soe-vs-non-soe" class="nav-link" data-scroll-target="#m2-分组回归-soe-vs-non-soe">M2: 分组回归 — SOE vs Non-SOE</a>
   <ul class="collapse">
-  <li><a href="#分组回归结果" id="toc-分组回归结果" class="nav-link" data-scroll-target="#分组回归结果"><span class="header-section-number">4.3.1</span> 分组回归结果</a></li>
-  <li><a href="#产权性质差异的经济解释" id="toc-产权性质差异的经济解释" class="nav-link" data-scroll-target="#产权性质差异的经济解释"><span class="header-section-number">4.3.2</span> 产权性质差异的经济解释</a></li>
+  <li><a href="#分组回归结果" id="toc-分组回归结果" class="nav-link" data-scroll-target="#分组回归结果">分组回归结果</a></li>
+  <li><a href="#产权性质差异的经济解释" id="toc-产权性质差异的经济解释" class="nav-link" data-scroll-target="#产权性质差异的经济解释">产权性质差异的经济解释</a></li>
   </ul></li>
-  <li><a href="#m3-交互项调节效应" id="toc-m3-交互项调节效应" class="nav-link" data-scroll-target="#m3-交互项调节效应"><span class="header-section-number">4.4</span> M3: 交互项调节效应</a>
+  <li><a href="#m3-交互项调节效应" id="toc-m3-交互项调节效应" class="nav-link" data-scroll-target="#m3-交互项调节效应">M3: 交互项调节效应</a>
   <ul class="collapse">
-  <li><a href="#交互项模型" id="toc-交互项模型" class="nav-link" data-scroll-target="#交互项模型"><span class="header-section-number">4.4.1</span> 交互项模型</a></li>
-  <li><a href="#交互项回归结果" id="toc-交互项回归结果" class="nav-link" data-scroll-target="#交互项回归结果"><span class="header-section-number">4.4.2</span> 交互项回归结果</a></li>
-  <li><a href="#交互效应计算" id="toc-交互效应计算" class="nav-link" data-scroll-target="#交互效应计算"><span class="header-section-number">4.4.3</span> 交互效应计算</a></li>
+  <li><a href="#交互项模型" id="toc-交互项模型" class="nav-link" data-scroll-target="#交互项模型">交互项模型</a></li>
+  <li><a href="#交互项回归结果" id="toc-交互项回归结果" class="nav-link" data-scroll-target="#交互项回归结果">交互项回归结果</a></li>
+  <li><a href="#交互效应计算" id="toc-交互效应计算" class="nav-link" data-scroll-target="#交互效应计算">交互效应计算</a></li>
   </ul></li>
-  <li><a href="#m4-时变系数模型" id="toc-m4-时变系数模型" class="nav-link" data-scroll-target="#m4-时变系数模型"><span class="header-section-number">4.5</span> M4: 时变系数模型</a>
+  <li><a href="#m4-时变系数模型" id="toc-m4-时变系数模型" class="nav-link" data-scroll-target="#m4-时变系数模型">M4: 时变系数模型</a>
   <ul class="collapse">
-  <li><a href="#模型设定-1" id="toc-模型设定-1" class="nav-link" data-scroll-target="#模型设定-1"><span class="header-section-number">4.5.1</span> 模型设定</a></li>
-  <li><a href="#beta_t-时序演变" id="toc-beta_t-时序演变" class="nav-link" data-scroll-target="#beta_t-时序演变"><span class="header-section-number">4.5.2</span> <span class="math inline">\(\beta_t\)</span> 时序演变</a></li>
-  <li><a href="#宏观事件影响" id="toc-宏观事件影响" class="nav-link" data-scroll-target="#宏观事件影响"><span class="header-section-number">4.5.3</span> 宏观事件影响</a></li>
+  <li><a href="#模型设定-1" id="toc-模型设定-1" class="nav-link" data-scroll-target="#模型设定-1">模型设定</a></li>
+  <li><a href="#beta_t-时序演变" id="toc-beta_t-时序演变" class="nav-link" data-scroll-target="#beta_t-时序演变"><span class="math inline">\(\beta_t\)</span> 时序演变</a></li>
+  <li><a href="#宏观事件影响" id="toc-宏观事件影响" class="nav-link" data-scroll-target="#宏观事件影响">宏观事件影响</a></li>
   </ul></li>
-  <li><a href="#m5-函数系数模型多项式调节" id="toc-m5-函数系数模型多项式调节" class="nav-link" data-scroll-target="#m5-函数系数模型多项式调节"><span class="header-section-number">4.6</span> M5: 函数系数模型（多项式调节）</a>
+  <li><a href="#m5-函数系数模型多项式调节" id="toc-m5-函数系数模型多项式调节" class="nav-link" data-scroll-target="#m5-函数系数模型多项式调节">M5: 函数系数模型（多项式调节）</a>
   <ul class="collapse">
-  <li><a href="#模型设定-2" id="toc-模型设定-2" class="nav-link" data-scroll-target="#模型设定-2"><span class="header-section-number">4.6.1</span> 模型设定</a></li>
-  <li><a href="#回归结果" id="toc-回归结果" class="nav-link" data-scroll-target="#回归结果"><span class="header-section-number">4.6.2</span> 回归结果</a></li>
-  <li><a href="#边际效应函数" id="toc-边际效应函数" class="nav-link" data-scroll-target="#边际效应函数"><span class="header-section-number">4.6.3</span> 边际效应函数</a></li>
+  <li><a href="#模型设定-2" id="toc-模型设定-2" class="nav-link" data-scroll-target="#模型设定-2">模型设定</a></li>
+  <li><a href="#回归结果" id="toc-回归结果" class="nav-link" data-scroll-target="#回归结果">回归结果</a></li>
+  <li><a href="#边际效应函数" id="toc-边际效应函数" class="nav-link" data-scroll-target="#边际效应函数">边际效应函数</a></li>
   </ul></li>
-  <li><a href="#m6-门槛模型" id="toc-m6-门槛模型" class="nav-link" data-scroll-target="#m6-门槛模型"><span class="header-section-number">4.7</span> M6: 门槛模型</a>
+  <li><a href="#m6-门槛模型" id="toc-m6-门槛模型" class="nav-link" data-scroll-target="#m6-门槛模型">M6: 门槛模型</a>
   <ul class="collapse">
-  <li><a href="#模型设定-3" id="toc-模型设定-3" class="nav-link" data-scroll-target="#模型设定-3"><span class="header-section-number">4.7.1</span> 模型设定</a></li>
-  <li><a href="#门槛估计结果" id="toc-门槛估计结果" class="nav-link" data-scroll-target="#门槛估计结果"><span class="header-section-number">4.7.2</span> 门槛估计结果</a></li>
-  <li><a href="#m5-vs-m6-对比" id="toc-m5-vs-m6-对比" class="nav-link" data-scroll-target="#m5-vs-m6-对比"><span class="header-section-number">4.7.3</span> M5 vs M6 对比</a></li>
+  <li><a href="#模型设定-3" id="toc-模型设定-3" class="nav-link" data-scroll-target="#模型设定-3">模型设定</a></li>
+  <li><a href="#门槛估计结果" id="toc-门槛估计结果" class="nav-link" data-scroll-target="#门槛估计结果">门槛估计结果</a></li>
+  <li><a href="#m5-vs-m6-对比" id="toc-m5-vs-m6-对比" class="nav-link" data-scroll-target="#m5-vs-m6-对比">M5 vs M6 对比</a></li>
   </ul></li>
-  <li><a href="#m1-m6-综合结果汇总" id="toc-m1-m6-综合结果汇总" class="nav-link" data-scroll-target="#m1-m6-综合结果汇总"><span class="header-section-number">4.8</span> M1-M6 综合结果汇总</a></li>
-  <li><a href="#小结" id="toc-小结" class="nav-link" data-scroll-target="#小结"><span class="header-section-number">4.9</span> 小结</a></li>
+  <li><a href="#m1-m6-综合结果汇总" id="toc-m1-m6-综合结果汇总" class="nav-link" data-scroll-target="#m1-m6-综合结果汇总">M1-M6 综合结果汇总</a></li>
+  <li><a href="#小结" id="toc-小结" class="nav-link" data-scroll-target="#小结">小结</a></li>
   </ul>
 </nav>
     </div>
@@ -234,7 +228,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Empirical Results</span></h1>
+<h1 class="title"><span class="chapter-title">Empirical Results</span></h1>
 </div>
 
 
@@ -251,8 +245,8 @@ window.Quarto = {
 </header>
 
 
-<section id="本章目标" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="本章目标"><span class="header-section-number">4.1</span> 本章目标</h2>
+<section id="本章目标" class="level2">
+<h2 class="anchored" data-anchor-id="本章目标">本章目标</h2>
 <div class="objectives-box">
 <p>本章学习结束后，你将了解：</p>
 <ul>
@@ -265,15 +259,15 @@ window.Quarto = {
 </ul>
 </div>
 </section>
-<section id="m1-基准回归-优序融资-vs-权衡理论" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="m1-基准回归-优序融资-vs-权衡理论"><span class="header-section-number">4.2</span> M1: 基准回归 — 优序融资 vs 权衡理论</h2>
-<section id="模型设定" class="level3" data-number="4.2.1">
-<h3 data-number="4.2.1" class="anchored" data-anchor-id="模型设定"><span class="header-section-number">4.2.1</span> 模型设定</h3>
+<section id="m1-基准回归-优序融资-vs-权衡理论" class="level2">
+<h2 class="anchored" data-anchor-id="m1-基准回归-优序融资-vs-权衡理论">M1: 基准回归 — 优序融资 vs 权衡理论</h2>
+<section id="模型设定" class="level3">
+<h3 class="anchored" data-anchor-id="模型设定">模型设定</h3>
 <p><span class="math display">\[Lev_{it} = \alpha + \beta \cdot NPR_{it} + \gamma' X_{it} + \mu_i + \lambda_t + \varepsilon_{it}\]</span></p>
 <p>其中： - <span class="math inline">\(X_{it}\)</span> 为控制变量（Size, Tang, Growth, NDTS） - <span class="math inline">\(\mu_i\)</span> 为公司固定效应 - <span class="math inline">\(\lambda_t\)</span> 为年度固定效应 - 标准误在公司与年度层面双向聚类</p>
 </section>
-<section id="两步估计法twfe与交互固定效应ife" class="level3" data-number="4.2.2">
-<h3 data-number="4.2.2" class="anchored" data-anchor-id="两步估计法twfe与交互固定效应ife"><span class="header-section-number">4.2.2</span> 两步估计法（TWFE）与交互固定效应（IFE）</h3>
+<section id="两步估计法twfe与交互固定效应ife" class="level3">
+<h3 class="anchored" data-anchor-id="两步估计法twfe与交互固定效应ife">两步估计法（TWFE）与交互固定效应（IFE）</h3>
 <div class="callout callout-style-simple callout-note callout-titled" title="模型对比">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -325,8 +319,8 @@ window.Quarto = {
 </tbody>
 </table>
 </section>
-<section id="结果解读" class="level3" data-number="4.2.3">
-<h3 data-number="4.2.3" class="anchored" data-anchor-id="结果解读"><span class="header-section-number">4.2.3</span> 结果解读</h3>
+<section id="结果解读" class="level3">
+<h3 class="anchored" data-anchor-id="结果解读">结果解读</h3>
 <p><strong>NPR 系数为负（-0.618）</strong>：A 股整体支持优序融资理论</p>
 <ul>
 <li>经济含义：净利润率每提高1个百分点，资产负债率下降约0.62个百分点</li>
@@ -338,8 +332,8 @@ window.Quarto = {
 <li>剩余 64% 反映因果效应，36% 由时变异质性驱动</li>
 </ul>
 </section>
-<section id="控制变量结果" class="level3" data-number="4.2.4">
-<h3 data-number="4.2.4" class="anchored" data-anchor-id="控制变量结果"><span class="header-section-number">4.2.4</span> 控制变量结果</h3>
+<section id="控制变量结果" class="level3">
+<h3 class="anchored" data-anchor-id="控制变量结果">控制变量结果</h3>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -402,10 +396,10 @@ window.Quarto = {
 </div>
 </section>
 </section>
-<section id="m2-分组回归-soe-vs-non-soe" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="m2-分组回归-soe-vs-non-soe"><span class="header-section-number">4.3</span> M2: 分组回归 — SOE vs Non-SOE</h2>
-<section id="分组回归结果" class="level3" data-number="4.3.1">
-<h3 data-number="4.3.1" class="anchored" data-anchor-id="分组回归结果"><span class="header-section-number">4.3.1</span> 分组回归结果</h3>
+<section id="m2-分组回归-soe-vs-non-soe" class="level2">
+<h2 class="anchored" data-anchor-id="m2-分组回归-soe-vs-non-soe">M2: 分组回归 — SOE vs Non-SOE</h2>
+<section id="分组回归结果" class="level3">
+<h3 class="anchored" data-anchor-id="分组回归结果">分组回归结果</h3>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -441,8 +435,8 @@ window.Quarto = {
 </tbody>
 </table>
 </section>
-<section id="产权性质差异的经济解释" class="level3" data-number="4.3.2">
-<h3 data-number="4.3.2" class="anchored" data-anchor-id="产权性质差异的经济解释"><span class="header-section-number">4.3.2</span> 产权性质差异的经济解释</h3>
+<section id="产权性质差异的经济解释" class="level3">
+<h3 class="anchored" data-anchor-id="产权性质差异的经济解释">产权性质差异的经济解释</h3>
 <p><strong>国企 NPR 系数更负（-0.836 vs -0.513）</strong>：</p>
 <ol type="1">
 <li><strong>预算软约束假说</strong>：国企盈利后更倾向于降低杠杆以维持财务稳健，避免政府救助预期</li>
@@ -464,14 +458,14 @@ window.Quarto = {
 </div>
 </section>
 </section>
-<section id="m3-交互项调节效应" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="m3-交互项调节效应"><span class="header-section-number">4.4</span> M3: 交互项调节效应</h2>
-<section id="交互项模型" class="level3" data-number="4.4.1">
-<h3 data-number="4.4.1" class="anchored" data-anchor-id="交互项模型"><span class="header-section-number">4.4.1</span> 交互项模型</h3>
+<section id="m3-交互项调节效应" class="level2">
+<h2 class="anchored" data-anchor-id="m3-交互项调节效应">M3: 交互项调节效应</h2>
+<section id="交互项模型" class="level3">
+<h3 class="anchored" data-anchor-id="交互项模型">交互项模型</h3>
 <p><span class="math display">\[Lev_{it} = \alpha + \beta_1 NPR_{it} + \beta_2 SOE_i + \beta_3 NPR_{it} \times SOE_i + \gamma' X_{it} + \mu_i + \lambda_t + \varepsilon_{it}\]</span></p>
 </section>
-<section id="交互项回归结果" class="level3" data-number="4.4.2">
-<h3 data-number="4.4.2" class="anchored" data-anchor-id="交互项回归结果"><span class="header-section-number">4.4.2</span> 交互项回归结果</h3>
+<section id="交互项回归结果" class="level3">
+<h3 class="anchored" data-anchor-id="交互项回归结果">交互项回归结果</h3>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -527,8 +521,8 @@ window.Quarto = {
 </tbody>
 </table>
 </section>
-<section id="交互效应计算" class="level3" data-number="4.4.3">
-<h3 data-number="4.4.3" class="anchored" data-anchor-id="交互效应计算"><span class="header-section-number">4.4.3</span> 交互效应计算</h3>
+<section id="交互效应计算" class="level3">
+<h3 class="anchored" data-anchor-id="交互效应计算">交互效应计算</h3>
 <p><strong>国企 NPR 总效应</strong>：-0.513 + (-0.269) = <strong>-0.782</strong></p>
 <p><strong>边际效应差异</strong>：交互项系数 -0.269 在统计上显著（p=0.005）</p>
 <div class="callout callout-style-simple callout-note callout-titled" title="调节机制">
@@ -546,15 +540,15 @@ window.Quarto = {
 </div>
 </section>
 </section>
-<section id="m4-时变系数模型" class="level2" data-number="4.5">
-<h2 data-number="4.5" class="anchored" data-anchor-id="m4-时变系数模型"><span class="header-section-number">4.5</span> M4: 时变系数模型</h2>
-<section id="模型设定-1" class="level3" data-number="4.5.1">
-<h3 data-number="4.5.1" class="anchored" data-anchor-id="模型设定-1"><span class="header-section-number">4.5.1</span> 模型设定</h3>
+<section id="m4-时变系数模型" class="level2">
+<h2 class="anchored" data-anchor-id="m4-时变系数模型">M4: 时变系数模型</h2>
+<section id="模型设定-1" class="level3">
+<h3 class="anchored" data-anchor-id="模型设定-1">模型设定</h3>
 <p>允许 NPR 系数随时间变化：</p>
 <p><span class="math display">\[Lev_{it} = \alpha + \beta_t NPR_{it} + \gamma' X_{it} + \mu_i + \lambda_t + \varepsilon_{it}\]</span></p>
 </section>
-<section id="beta_t-时序演变" class="level3" data-number="4.5.2">
-<h3 data-number="4.5.2" class="anchored" data-anchor-id="beta_t-时序演变"><span class="header-section-number">4.5.2</span> <span class="math inline">\(\beta_t\)</span> 时序演变</h3>
+<section id="beta_t-时序演变" class="level3">
+<h3 class="anchored" data-anchor-id="beta_t-时序演变"><span class="math inline">\(\beta_t\)</span> 时序演变</h3>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -586,8 +580,8 @@ window.Quarto = {
 </tbody>
 </table>
 </section>
-<section id="宏观事件影响" class="level3" data-number="4.5.3">
-<h3 data-number="4.5.3" class="anchored" data-anchor-id="宏观事件影响"><span class="header-section-number">4.5.3</span> 宏观事件影响</h3>
+<section id="宏观事件影响" class="level3">
+<h3 class="anchored" data-anchor-id="宏观事件影响">宏观事件影响</h3>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -639,14 +633,14 @@ window.Quarto = {
 </div>
 </section>
 </section>
-<section id="m5-函数系数模型多项式调节" class="level2" data-number="4.6">
-<h2 data-number="4.6" class="anchored" data-anchor-id="m5-函数系数模型多项式调节"><span class="header-section-number">4.6</span> M5: 函数系数模型（多项式调节）</h2>
-<section id="模型设定-2" class="level3" data-number="4.6.1">
-<h3 data-number="4.6.1" class="anchored" data-anchor-id="模型设定-2"><span class="header-section-number">4.6.1</span> 模型设定</h3>
+<section id="m5-函数系数模型多项式调节" class="level2">
+<h2 class="anchored" data-anchor-id="m5-函数系数模型多项式调节">M5: 函数系数模型（多项式调节）</h2>
+<section id="模型设定-2" class="level3">
+<h3 class="anchored" data-anchor-id="模型设定-2">模型设定</h3>
 <p><span class="math display">\[Lev_{it} = \alpha + \beta_0 NPR_{it} + \beta_1 NPR_{it} \times Size_{it} + \beta_2 NPR_{it} \times Size_{it}^2 + \gamma' X_{it} + \mu_i + \lambda_t + \varepsilon_{it}\]</span></p>
 </section>
-<section id="回归结果" class="level3" data-number="4.6.2">
-<h3 data-number="4.6.2" class="anchored" data-anchor-id="回归结果"><span class="header-section-number">4.6.2</span> 回归结果</h3>
+<section id="回归结果" class="level3">
+<h3 class="anchored" data-anchor-id="回归结果">回归结果</h3>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -678,8 +672,8 @@ window.Quarto = {
 </tbody>
 </table>
 </section>
-<section id="边际效应函数" class="level3" data-number="4.6.3">
-<h3 data-number="4.6.3" class="anchored" data-anchor-id="边际效应函数"><span class="header-section-number">4.6.3</span> 边际效应函数</h3>
+<section id="边际效应函数" class="level3">
+<h3 class="anchored" data-anchor-id="边际效应函数">边际效应函数</h3>
 <p><span class="math display">\[\hat{\beta}(Size) = -30.289 + 2.699 \times Size - 0.061 \times Size^2\]</span></p>
 <p><strong>拐点计算</strong>：令 <span class="math inline">\(\hat{\beta}(Size) = 0\)</span>，解得： <span class="math display">\[Size^* = \frac{-b_1}{2b_2} = \frac{30.289}{2 \times 0.061} \approx 22.12\]</span></p>
 <table class="caption-top table">
@@ -739,15 +733,15 @@ window.Quarto = {
 </div>
 </section>
 </section>
-<section id="m6-门槛模型" class="level2" data-number="4.7">
-<h2 data-number="4.7" class="anchored" data-anchor-id="m6-门槛模型"><span class="header-section-number">4.7</span> M6: 门槛模型</h2>
-<section id="模型设定-3" class="level3" data-number="4.7.1">
-<h3 data-number="4.7.1" class="anchored" data-anchor-id="模型设定-3"><span class="header-section-number">4.7.1</span> 模型设定</h3>
+<section id="m6-门槛模型" class="level2">
+<h2 class="anchored" data-anchor-id="m6-门槛模型">M6: 门槛模型</h2>
+<section id="模型设定-3" class="level3">
+<h3 class="anchored" data-anchor-id="模型设定-3">模型设定</h3>
 <p><span class="math display">\[Lev_{it} = \alpha + \beta_1 NPR_{it} \cdot I(Size \leq \gamma) + \beta_2 NPR_{it} \cdot I(Size &gt; \gamma) + \gamma' X_{it} + \mu_i + \lambda_t + \varepsilon_{it}\]</span></p>
 <p>门槛值 <span class="math inline">\(\gamma\)</span> 通过网格搜索最小化残差平方和（SSR）估计。</p>
 </section>
-<section id="门槛估计结果" class="level3" data-number="4.7.2">
-<h3 data-number="4.7.2" class="anchored" data-anchor-id="门槛估计结果"><span class="header-section-number">4.7.2</span> 门槛估计结果</h3>
+<section id="门槛估计结果" class="level3">
+<h3 class="anchored" data-anchor-id="门槛估计结果">门槛估计结果</h3>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -799,8 +793,8 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="m5-vs-m6-对比" class="level3" data-number="4.7.3">
-<h3 data-number="4.7.3" class="anchored" data-anchor-id="m5-vs-m6-对比"><span class="header-section-number">4.7.3</span> M5 vs M6 对比</h3>
+<section id="m5-vs-m6-对比" class="level3">
+<h3 class="anchored" data-anchor-id="m5-vs-m6-对比">M5 vs M6 对比</h3>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -828,8 +822,8 @@ window.Quarto = {
 <p>两个模型的结构性转折位置接近（22.12 vs 23.36），互为稳健性检验。</p>
 </section>
 </section>
-<section id="m1-m6-综合结果汇总" class="level2" data-number="4.8">
-<h2 data-number="4.8" class="anchored" data-anchor-id="m1-m6-综合结果汇总"><span class="header-section-number">4.8</span> M1-M6 综合结果汇总</h2>
+<section id="m1-m6-综合结果汇总" class="level2">
+<h2 class="anchored" data-anchor-id="m1-m6-综合结果汇总">M1-M6 综合结果汇总</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -885,8 +879,8 @@ window.Quarto = {
 </tbody>
 </table>
 </section>
-<section id="小结" class="level2" data-number="4.9">
-<h2 data-number="4.9" class="anchored" data-anchor-id="小结"><span class="header-section-number">4.9</span> 小结</h2>
+<section id="小结" class="level2">
+<h2 class="anchored" data-anchor-id="小结">小结</h2>
 <div class="callout callout-style-simple callout-note callout-titled" title="核心结论">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1320,12 +1314,12 @@ window.Quarto = {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../src/data.html" class="pagination-link" aria-label="Data &amp; Variables">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data &amp; Variables</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Data &amp; Variables</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../src/robustness.html" class="pagination-link" aria-label="Robustness Checks">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Robustness Checks</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-title">Robustness Checks</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

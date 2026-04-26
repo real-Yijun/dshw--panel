@@ -6,7 +6,7 @@ book:
   title: "上市公司资本结构影响因素分析"
   subtitle: "基于 A 股面板数据的实证研究"
   author: "赵一骏"
-  date: "04-26-2026"
+  date: April 26, 2026
 
   sidebar:
     title: "资本结构分析"
@@ -32,7 +32,7 @@ format:
     smooth-scroll: true
     toc: true
     toc-depth: 3
-    number-sections: true
+    number-sections: false
     section-divs: true
     css: styles.css
     fontsize: 0.95rem
