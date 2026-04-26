@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>6&nbsp; Conclusion – 上市公司资本结构影响因素分析</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../src/robustness.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-6cd627e019fb8fd7c2c91e40655ee96f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../src/conclusion.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Conclusion</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">资本结构分析</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">上市公司资本结构影响因素分析</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../src/intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction &amp; Hypotheses</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../src/data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data &amp; Variables</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../src/results.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Empirical Results</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../src/robustness.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Robustness Checks</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../src/conclusion.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Conclusion</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#本章目标" id="toc-本章目标" class="nav-link active" data-scroll-target="#本章目标"><span class="header-section-number">6.1</span> 本章目标</a></li>
+  <li><a href="#主要发现" id="toc-主要发现" class="nav-link" data-scroll-target="#主要发现"><span class="header-section-number">6.2</span> 主要发现</a>
+  <ul class="collapse">
+  <li><a href="#整体结论优序融资理论得到支持" id="toc-整体结论优序融资理论得到支持" class="nav-link" data-scroll-target="#整体结论优序融资理论得到支持"><span class="header-section-number">6.2.1</span> 整体结论：优序融资理论得到支持</a></li>
+  <li><a href="#产权性质的关键调节作用" id="toc-产权性质的关键调节作用" class="nav-link" data-scroll-target="#产权性质的关键调节作用"><span class="header-section-number">6.2.2</span> 产权性质的关键调节作用</a></li>
+  <li><a href="#时间维度的动态演变" id="toc-时间维度的动态演变" class="nav-link" data-scroll-target="#时间维度的动态演变"><span class="header-section-number">6.2.3</span> 时间维度的动态演变</a></li>
+  <li><a href="#规模的非线性调节" id="toc-规模的非线性调节" class="nav-link" data-scroll-target="#规模的非线性调节"><span class="header-section-number">6.2.4</span> 规模的非线性调节</a></li>
+  <li><a href="#交互固定效应的压缩效应" id="toc-交互固定效应的压缩效应" class="nav-link" data-scroll-target="#交互固定效应的压缩效应"><span class="header-section-number">6.2.5</span> 交互固定效应的压缩效应</a></li>
+  </ul></li>
+  <li><a href="#理论贡献" id="toc-理论贡献" class="nav-link" data-scroll-target="#理论贡献"><span class="header-section-number">6.3</span> 理论贡献</a>
+  <ul class="collapse">
+  <li><a href="#对优序融资理论的验证" id="toc-对优序融资理论的验证" class="nav-link" data-scroll-target="#对优序融资理论的验证"><span class="header-section-number">6.3.1</span> 对优序融资理论的验证</a></li>
+  <li><a href="#对权衡理论的挑战" id="toc-对权衡理论的挑战" class="nav-link" data-scroll-target="#对权衡理论的挑战"><span class="header-section-number">6.3.2</span> 对权衡理论的挑战</a></li>
+  <li><a href="#产权性质的重要性" id="toc-产权性质的重要性" class="nav-link" data-scroll-target="#产权性质的重要性"><span class="header-section-number">6.3.3</span> 产权性质的重要性</a></li>
+  </ul></li>
+  <li><a href="#政策启示" id="toc-政策启示" class="nav-link" data-scroll-target="#政策启示"><span class="header-section-number">6.4</span> 政策启示</a>
+  <ul class="collapse">
+  <li><a href="#对企业融资决策的启示" id="toc-对企业融资决策的启示" class="nav-link" data-scroll-target="#对企业融资决策的启示"><span class="header-section-number">6.4.1</span> 对企业融资决策的启示</a></li>
+  <li><a href="#对金融改革的启示" id="toc-对金融改革的启示" class="nav-link" data-scroll-target="#对金融改革的启示"><span class="header-section-number">6.4.2</span> 对金融改革的启示</a></li>
+  <li><a href="#对监管机构的启示" id="toc-对监管机构的启示" class="nav-link" data-scroll-target="#对监管机构的启示"><span class="header-section-number">6.4.3</span> 对监管机构的启示</a></li>
+  </ul></li>
+  <li><a href="#研究局限" id="toc-研究局限" class="nav-link" data-scroll-target="#研究局限"><span class="header-section-number">6.5</span> 研究局限</a>
+  <ul class="collapse">
+  <li><a href="#数据局限" id="toc-数据局限" class="nav-link" data-scroll-target="#数据局限"><span class="header-section-number">6.5.1</span> 数据局限</a></li>
+  <li><a href="#方法局限" id="toc-方法局限" class="nav-link" data-scroll-target="#方法局限"><span class="header-section-number">6.5.2</span> 方法局限</a></li>
+  <li><a href="#外部有效性" id="toc-外部有效性" class="nav-link" data-scroll-target="#外部有效性"><span class="header-section-number">6.5.3</span> 外部有效性</a></li>
+  </ul></li>
+  <li><a href="#未来研究方向" id="toc-未来研究方向" class="nav-link" data-scroll-target="#未来研究方向"><span class="header-section-number">6.6</span> 未来研究方向</a>
+  <ul class="collapse">
+  <li><a href="#拓展研究话题" id="toc-拓展研究话题" class="nav-link" data-scroll-target="#拓展研究话题"><span class="header-section-number">6.6.1</span> 拓展研究话题</a></li>
+  <li><a href="#方法改进" id="toc-方法改进" class="nav-link" data-scroll-target="#方法改进"><span class="header-section-number">6.6.2</span> 方法改进</a></li>
+  <li><a href="#数据拓展" id="toc-数据拓展" class="nav-link" data-scroll-target="#数据拓展"><span class="header-section-number">6.6.3</span> 数据拓展</a></li>
+  </ul></li>
+  <li><a href="#结论" id="toc-结论" class="nav-link" data-scroll-target="#结论"><span class="header-section-number">6.7</span> 结论</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Conclusion</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="本章目标" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="本章目标"><span class="header-section-number">6.1</span> 本章目标</h2>
+<div class="objectives-box">
+<p>本章学习结束后，你将了解：</p>
+<ul>
+<li>本研究的主要发现与理论贡献</li>
+<li>对优序融资理论在中国A股适用性的评估</li>
+<li>政策启示与实践建议</li>
+<li>研究局限与未来研究方向</li>
+</ul>
+</div>
+</section>
+<section id="主要发现" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="主要发现"><span class="header-section-number">6.2</span> 主要发现</h2>
+<p>本研究基于2011-2025年中国A股4,513家上市公司的面板数据，系统分析了资本结构的影响因素。主要发现如下：</p>
+<section id="整体结论优序融资理论得到支持" class="level3" data-number="6.2.1">
+<h3 data-number="6.2.1" class="anchored" data-anchor-id="整体结论优序融资理论得到支持"><span class="header-section-number">6.2.1</span> 整体结论：优序融资理论得到支持</h3>
+<p><strong>M1 基准回归</strong>显示，NPR 系数为 <strong>-0.618</strong>（t = -11.41），在公司与年度双向聚类标准误下高度显著。</p>
+<div class="callout callout-style-simple callout-important callout-titled" title="核心结论">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>核心结论
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>中国A股整体支持优序融资理论：盈利能力越强的企业，杠杆率越低。</p>
+</div>
+</div>
+<p>这一发现与经典权衡理论的预测相反。权衡理论预期盈利能力强的企业应利用税盾增加债务，但中国市场的实证结果恰恰相反。可能的解释包括：</p>
+<ol type="1">
+<li><strong>股权融资便利</strong>：A股审批制度严格，股权融资成本相对较低，盈利后企业倾向股权融资而非债务</li>
+<li><strong>融资约束分化</strong>：民营企业面临严重融资约束，盈利后优先使用内源资金</li>
+<li><strong>风险规避倾向</strong>：经历亚洲金融危机（1997）和2008金融危机后，中国企业普遍对债务融资持谨慎态度</li>
+</ol>
+</section>
+<section id="产权性质的关键调节作用" class="level3" data-number="6.2.2">
+<h3 data-number="6.2.2" class="anchored" data-anchor-id="产权性质的关键调节作用"><span class="header-section-number">6.2.2</span> 产权性质的关键调节作用</h3>
+<p><strong>M2 分组回归</strong>发现：</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>产权性质</th>
+<th>NPR 系数</th>
+<th>效应强度</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SOE（国企）</td>
+<td>-0.836</td>
+<td>强</td>
+</tr>
+<tr class="even">
+<td>Non-SOE（民企）</td>
+<td>-0.513</td>
+<td>弱</td>
+</tr>
+</tbody>
+</table>
+<p>国企 NPR 效应是民企的 <strong>1.63 倍</strong>，F检验证实组间差异在1%水平显著。</p>
+<p><strong>机制解释</strong>：</p>
+<ol type="1">
+<li><strong>预算软约束反转</strong>：国企盈利后预期政府救助减弱，主动降杠杆以维持财务稳健</li>
+<li><strong>政治成本规避</strong>：国企管理者面临绩效考核，盈利后倾向降低债务以规避风险</li>
+<li><strong>委托代理问题</strong>：国企管理层在盈利丰厚时可能更关注规模扩张而非债务融资</li>
+</ol>
+</section>
+<section id="时间维度的动态演变" class="level3" data-number="6.2.3">
+<h3 data-number="6.2.3" class="anchored" data-anchor-id="时间维度的动态演变"><span class="header-section-number">6.2.3</span> 时间维度的动态演变</h3>
+<p><strong>M4 时变系数模型</strong>揭示了NPR-Lev关系的三阶段演变：</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>阶段</th>
+<th>时期</th>
+<th><span class="math inline">\(\beta_t\)</span></th>
+<th>宏观背景</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>强效应期</td>
+<td>2011-2013</td>
+<td>-0.74</td>
+<td>四万亿刺激退出，融资收紧</td>
+</tr>
+<tr class="even">
+<td>弱效应期</td>
+<td>2015-2020</td>
+<td>-0.38</td>
+<td>去杠杆政策、贸易摩擦</td>
+</tr>
+<tr class="odd">
+<td>强化期</td>
+<td>2022-2025</td>
+<td>-0.78</td>
+<td>后疫情复苏、现金为王</td>
+</tr>
+</tbody>
+</table>
+<p>政策与宏观环境是驱动NPR-Lev关系演变的关键力量。</p>
+</section>
+<section id="规模的非线性调节" class="level3" data-number="6.2.4">
+<h3 data-number="6.2.4" class="anchored" data-anchor-id="规模的非线性调节"><span class="header-section-number">6.2.4</span> 规模的非线性调节</h3>
+<p><strong>M5 函数系数模型</strong>发现：</p>
+<p><span class="math display">\[\hat{\beta}(Size) = -30.289 + 2.699 \times Size - 0.061 \times Size^2\]</span></p>
+<p>拐点约在 <strong>Size = 22.12</strong>（约4亿元总资产）。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>规模区间</th>
+<th><span class="math inline">\(\beta(Size)\)</span></th>
+<th>主导理论</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>小规模（P10-P25）</td>
+<td>负（-0.38~-0.67）</td>
+<td>优序融资</td>
+</tr>
+<tr class="even">
+<td>中等规模（P50）</td>
+<td>接近零</td>
+<td>过渡区</td>
+</tr>
+<tr class="odd">
+<td>大规模（P75-P90）</td>
+<td>正（+0.49~+0.93）</td>
+<td>权衡理论</td>
+</tr>
+</tbody>
+</table>
+<p><strong>M6 门槛模型</strong>进一步确认，门槛值 <span class="math inline">\(\gamma = 23.36\)</span>（P64，约140亿元总资产）。</p>
+<div class="callout callout-style-simple callout-warning callout-titled" title="意外发现">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>意外发现
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>M6 发现大规模企业 NPR 负向效应反而更强（-1.028 vs -0.666），与M5理论预测相反。这可能反映中国大型国企的特殊行为模式。</p>
+</div>
+</div>
+</section>
+<section id="交互固定效应的压缩效应" class="level3" data-number="6.2.5">
+<h3 data-number="6.2.5" class="anchored" data-anchor-id="交互固定效应的压缩效应"><span class="header-section-number">6.2.5</span> 交互固定效应的压缩效应</h3>
+<p><strong>M1’ IFE</strong> 与 <strong>M1 TWFE</strong> 的比较显示：</p>
+<ul>
+<li>IFE 系数（-0.392）比 TWFE（-0.618）低36%</li>
+<li>说明部分负向关系由时变异质性驱动</li>
+<li>但剩余64%的效应具有因果性质，结论稳健</li>
+</ul>
+</section>
+</section>
+<section id="理论贡献" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="理论贡献"><span class="header-section-number">6.3</span> 理论贡献</h2>
+<section id="对优序融资理论的验证" class="level3" data-number="6.3.1">
+<h3 data-number="6.3.1" class="anchored" data-anchor-id="对优序融资理论的验证"><span class="header-section-number">6.3.1</span> 对优序融资理论的验证</h3>
+<p>本研究为优序融资理论在中国资本市场的适用性提供了新的实证证据：</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>研究发现</th>
+<th>理论含义</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>NPR 系数为负</td>
+<td>支持优序融资的核心预测</td>
+</tr>
+<tr class="even">
+<td>国企效应更强</td>
+<td>融资约束与预算软约束影响融资选择</td>
+</tr>
+<tr class="odd">
+<td>动态演变</td>
+<td>融资偏好随制度环境调整</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="对权衡理论的挑战" class="level3" data-number="6.3.2">
+<h3 data-number="6.3.2" class="anchored" data-anchor-id="对权衡理论的挑战"><span class="header-section-number">6.3.2</span> 对权衡理论的挑战</h3>
+<p>权衡理论预测盈利能力与杠杆率正相关，但中国市场的实证结果相反：</p>
+<ol type="1">
+<li><strong>税盾利用不足</strong>：中国企业利用债务税盾的意愿较低</li>
+<li><strong>风险规避倾向</strong>：高盈利企业倾向于保持低杠杆以应对不确定性</li>
+<li><strong>股权融资优势</strong>：严格的IPO审批制度使股权融资相对便宜</li>
+</ol>
+</section>
+<section id="产权性质的重要性" class="level3" data-number="6.3.3">
+<h3 data-number="6.3.3" class="anchored" data-anchor-id="产权性质的重要性"><span class="header-section-number">6.3.3</span> 产权性质的重要性</h3>
+<p>本研究强调产权性质在资本结构决策中的关键作用：</p>
+<ul>
+<li>SOE 与 Non-SOE 的资本结构决策逻辑存在系统性差异</li>
+<li>政策环境与制度背景影响企业的融资偏好</li>
+<li>未来研究应控制或分析产权异质性</li>
+</ul>
+</section>
+</section>
+<section id="政策启示" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="政策启示"><span class="header-section-number">6.4</span> 政策启示</h2>
+<section id="对企业融资决策的启示" class="level3" data-number="6.4.1">
+<h3 data-number="6.4.1" class="anchored" data-anchor-id="对企业融资决策的启示"><span class="header-section-number">6.4.1</span> 对企业融资决策的启示</h3>
+<ol type="1">
+<li><strong>重视内部资金</strong>：盈利企业应优先使用内部资金，降低融资成本</li>
+<li><strong>关注产权差异</strong>：国企与民企应采用不同的资本结构策略</li>
+<li><strong>动态调整</strong>：根据宏观环境与政策变化灵活调整融资结构</li>
+</ol>
+</section>
+<section id="对金融改革的启示" class="level3" data-number="6.4.2">
+<h3 data-number="6.4.2" class="anchored" data-anchor-id="对金融改革的启示"><span class="header-section-number">6.4.2</span> 对金融改革的启示</h3>
+<ol type="1">
+<li><strong>改善民企融资环境</strong>：民企面临严重融资约束，需进一步开放信贷市场</li>
+<li><strong>硬化国企预算约束</strong>：减少政府对国企的隐性担保，促进公平竞争</li>
+<li><strong>发展债务市场</strong>：完善公司债市场，为企业提供多元融资渠道</li>
+</ol>
+</section>
+<section id="对监管机构的启示" class="level3" data-number="6.4.3">
+<h3 data-number="6.4.3" class="anchored" data-anchor-id="对监管机构的启示"><span class="header-section-number">6.4.3</span> 对监管机构的启示</h3>
+<ol type="1">
+<li><strong>去杠杆政策效果</strong>：去杠杆政策确实影响企业融资行为，应评估长期效应</li>
+<li><strong>行业差异监管</strong>：不同行业的资本结构逻辑不同，监管政策应差异化</li>
+<li><strong>信息披露要求</strong>：提高信息透明度有助于降低融资成本</li>
+</ol>
+</section>
+</section>
+<section id="研究局限" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="研究局限"><span class="header-section-number">6.5</span> 研究局限</h2>
+<section id="数据局限" class="level3" data-number="6.5.1">
+<h3 data-number="6.5.1" class="anchored" data-anchor-id="数据局限"><span class="header-section-number">6.5.1</span> 数据局限</h3>
+<ol type="1">
+<li><strong>样本期限</strong>：2011-2025年可能无法完全反映长期趋势</li>
+<li><strong>行业覆盖</strong>：金融类企业被排除，可能影响结果的普适性</li>
+<li><strong>变量测量</strong>：部分变量使用会计数据，可能存在测量误差</li>
+</ol>
+</section>
+<section id="方法局限" class="level3" data-number="6.5.2">
+<h3 data-number="6.5.2" class="anchored" data-anchor-id="方法局限"><span class="header-section-number">6.5.2</span> 方法局限</h3>
+<ol type="1">
+<li><strong>内生性问题</strong>：尽管采用双向固定效应，无法完全排除内生性</li>
+<li><strong>门槛模型</strong>：非标准实现，无法获得bootstrap p值</li>
+<li><strong>动态面板</strong>：未采用系统GMM等动态面板方法</li>
+</ol>
+</section>
+<section id="外部有效性" class="level3" data-number="6.5.3">
+<h3 data-number="6.5.3" class="anchored" data-anchor-id="外部有效性"><span class="header-section-number">6.5.3</span> 外部有效性</h3>
+<ol type="1">
+<li><strong>市场范围</strong>：仅研究A股市场，不包括港股、美股中概股</li>
+<li><strong>时间范围</strong>：2025年后政策环境可能发生重大变化</li>
+<li><strong>企业类型</strong>：研究以制造业为主，服务业样本较少</li>
+</ol>
+</section>
+</section>
+<section id="未来研究方向" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="未来研究方向"><span class="header-section-number">6.6</span> 未来研究方向</h2>
+<section id="拓展研究话题" class="level3" data-number="6.6.1">
+<h3 data-number="6.6.1" class="anchored" data-anchor-id="拓展研究话题"><span class="header-section-number">6.6.1</span> 拓展研究话题</h3>
+<ol type="1">
+<li><strong>动态资本结构</strong>：采用系统GMM分析目标杠杆率与调整速度</li>
+<li><strong>国际比较</strong>：与其他新兴市场或发达市场对比</li>
+<li><strong>微观机制</strong>：深入研究代理问题、管理层特征等微观机制</li>
+</ol>
+</section>
+<section id="方法改进" class="level3" data-number="6.6.2">
+<h3 data-number="6.6.2" class="anchored" data-anchor-id="方法改进"><span class="header-section-number">6.6.2</span> 方法改进</h3>
+<ol type="1">
+<li><strong>工具变量法</strong>：寻找外部政策冲击作为工具变量解决内生性</li>
+<li><strong>Bootstrap门槛检验</strong>：使用标准软件（如Stata xthreg）获得p值</li>
+<li><strong>机器学习方法</strong>：使用机器学习辅助变量选择与预测</li>
+</ol>
+</section>
+<section id="数据拓展" class="level3" data-number="6.6.3">
+<h3 data-number="6.6.3" class="anchored" data-anchor-id="数据拓展"><span class="header-section-number">6.6.3</span> 数据拓展</h3>
+<ol type="1">
+<li><strong>更长的时间序列</strong>：扩展至1990年代，观察改革开放在资本结构中的角色</li>
+<li><strong>非上市公司</strong>：将样本扩展至非上市公司，比较融资行为差异</li>
+<li><strong>文本数据</strong>：利用年报文本分析管理层预期与市场情绪</li>
+</ol>
+</section>
+</section>
+<section id="结论" class="level2" data-number="6.7">
+<h2 data-number="6.7" class="anchored" data-anchor-id="结论"><span class="header-section-number">6.7</span> 结论</h2>
+<div class="callout callout-style-simple callout-note callout-titled" title="核心结论">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>核心结论
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>本研究基于2011-2025年中国A股面板数据，系统验证了优序融资理论在A股市场的适用性。主要发现：</p>
+<ol type="1">
+<li><strong>NPR 系数显著为负（-0.618）</strong>：盈利能力越强，杠杆率越低</li>
+<li><strong>产权性质显著调节</strong>：国企效应（-0.836）是民企（-0.513）的1.6倍</li>
+<li><strong>时序呈三阶段演变</strong>：政策与宏观环境是关键驱动力</li>
+<li><strong>规模存在非线性调节</strong>：拐点约在4亿元总资产附近</li>
+<li><strong>门槛效应</strong>：大型企业NPR效应反而更强（-1.028）</li>
+</ol>
+<p>这些发现对中国资本结构理论研究与实践决策具有重要参考价值。</p>
+</div>
+</div>
+<hr>
+<div class="callout callout-style-simple callout-tip callout-titled" title="参考文献">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>参考文献
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Myers, S.C. (1984). The Capital Structure Puzzle. <em>Journal of Finance</em>, 39(3), 574-592.</li>
+<li>Myers, S.C. &amp; Majluf, N.S. (1984). Corporate Financing and Investment Decisions When Firms Have Information That Investors Do Not Have. <em>Journal of Financial Economics</em>, 13(2), 187-221.</li>
+<li>Jensen, M.C. &amp; Meckling, W.H. (1976). Theory of the Firm: Managerial Behavior, Agency Costs and Ownership Structure. <em>Journal of Financial Economics</em>, 3(4), 305-360.</li>
+<li>Modigliani, F. &amp; Miller, M.H. (1958). The Cost of Capital, Corporate Finance and the Theory of Investment. <em>American Economic Review</em>, 48(3), 261-297.</li>
+<li>Cerulli, G. &amp; Dong, Y. (2022). A Flexible Instrumental Variable Approach for Causal Inference in Panel Data. <em>Journal of Business &amp; Economic Statistics</em>, 40(3), 1186-1199.</li>
+</ul>
+</div>
+</div>
+<p><strong>作者</strong>：赵一骏 <strong>联系</strong>：zhaoyijun@example.com <strong>GitHub</strong>：https://github.com/real-Yijun/dshw–panel</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../src/robustness.html" class="pagination-link" aria-label="Robustness Checks">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Robustness Checks</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

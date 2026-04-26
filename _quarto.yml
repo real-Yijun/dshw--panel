@@ -6,8 +6,7 @@ book:
   title: "上市公司资本结构影响因素分析"
   subtitle: "基于 A 股面板数据的实证研究"
   author: "赵一骏"
-  date: "2026-04"
-  language: zh-CN
+  date: "04-26-2026"
 
   sidebar:
     title: "资本结构分析"
@@ -18,11 +17,11 @@ book:
 
   chapters:
     - index.qmd
-    - src/01-intro.qmd
-    - src/02-data.qmd
-    - src/03-results.qmd
-    - src/04-robustness.qmd
-    - src/05-conclusion.qmd
+    - src/intro.qmd
+    - src/data.qmd
+    - src/results.qmd
+    - src/robustness.qmd
+    - src/conclusion.qmd
 
 format:
   html:
