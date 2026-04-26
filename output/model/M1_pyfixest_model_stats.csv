@@ -1,0 +1,2 @@
+﻿model,n_obs,n_firms,r2_within,vcov
+M1_TWFE,37238,4513,0.18673491488676963,"two-way cluster (stkcd, year)"

@@ -1,0 +1,21 @@
+M6 threshold model results
+----------------------------
+Balanced observations: 7,590
+Balanced firms: 506
+Years: 15
+Gamma hat (size threshold): 23.359552
+Gamma quantile approx: 0.640
+Obs <= gamma: 4,857
+Obs > gamma: 2,733
+
+Coefficient table
+npr_low: coef=-0.666123, se=0.075465, t=-8.827, p=0.0000
+npr_high: coef=-1.028444, se=0.097096, t=-10.592, p=0.0000
+size: coef=0.095754, se=0.008404, t=11.394, p=0.0000
+tang: coef=0.063878, se=0.040401, t=1.581, p=0.1139
+growth: coef=0.027540, se=0.009729, t=2.831, p=0.0047
+ndts: coef=-0.153615, se=0.379464, t=-0.405, p=0.6856
+
+Within R2: 0.104338
+N: 7,590
+SSR: 51.008230
