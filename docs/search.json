@@ -4,7 +4,17 @@
     "href": "index.html",
     "title": "上市公司资本结构影响因素分析",
     "section": "",
-    "text": "主要发现\n本项目为 《计量经济学》 课程作业，分析中国A股上市公司资本结构的影响因素。",
+    "text": "数据说明",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>上市公司资本结构影响因素分析</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#数据说明",
+    "href": "index.html#数据说明",
+    "title": "上市公司资本结构影响因素分析",
+    "section": "",
+    "text": "Note主要数据\n\n\n\n\n样本：4,513 家上市公司，37,238 个公司-年观测值（2011—2025年）\n数据来源：CSMAR\n分析工具：Stata 17.0 / Python 3.12",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>上市公司资本结构影响因素分析</span>"
     ]
@@ -13,8 +23,8 @@
     "objectID": "index.html#主要发现",
     "href": "index.html#主要发现",
     "title": "上市公司资本结构影响因素分析",
-    "section": "",
-    "text": "A 股整体支持优序融资理论：NPR 系数为 −0.618（t = −11.41），盈利能力越强杠杆率越低\n产权性质显著调节：国企 NPR 系数（−0.836）是民企（−0.513）的 1.6 倍\nNPR-Lev 关系呈三阶段演变：2011-2013 → 2015-2020 → 2022-2025\n规模非线性调节：拐点约 Size = 22.12（约 4 亿元总资产）\n门槛效应：γ̂ = 23.36（P64，约 140 亿元）\n\n\n\n\n\n\n\nTipGitHub 仓库\n\n\n\n分析代码与完整报告见：https://github.com/real-Yijun/dshw–panel",
+    "section": "主要发现",
+    "text": "主要发现\n\nA 股整体支持优序融资理论：NPR 系数为 −0.618（t = −11.41），盈利能力越强杠杆率越低\n产权性质显著调节：国企 NPR 系数（−0.836）是民企（−0.513）的 1.6 倍\nNPR-Lev 关系呈三阶段演变：2011-2013 → 2015-2020 → 2022-2025\n规模非线性调节：拐点约 Size = 22.12（约 4 亿元总资产）\n门槛效应：γ̂ = 23.36（P64，约 140 亿元）\n\n\n\n\n\n\n\nTipGitHub 仓库\n\n\n\n分析代码与完整报告见：https://github.com/real-Yijun/dshw–panel",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>上市公司资本结构影响因素分析</span>"
     ]
