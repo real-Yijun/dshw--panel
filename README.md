@@ -3,7 +3,9 @@
 基于 A 股面板数据的实证研究 | 赵一骏 | 2026-04
 
 ---
+**GitHub 仓库**：https://github.com/real-Yijun/dshw--panel
 
+---
 ## 📖 在线阅读
 
 **Quarto Book 网址**：https://real-Yijun.github.io/dshw--panel/
@@ -80,4 +82,3 @@ quarto render
 ---
 
 *GitHub 仓库*：https://github.com/real-Yijun/dshw--panel
-*联系作者*：zhaoyijun@example.com
