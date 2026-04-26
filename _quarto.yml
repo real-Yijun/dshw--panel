@@ -1,0 +1,49 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "上市公司资本结构影响因素分析"
+  subtitle: "基于 A 股面板数据的实证研究"
+  author: "赵一骏"
+  date: "2026-04"
+  language: zh-CN
+
+  sidebar:
+    title: "资本结构分析"
+    search: true
+    collapse-level: 2
+    style: floating
+    background: light
+
+  chapters:
+    - index.qmd
+    - src/01-intro.qmd
+    - src/02-data.qmd
+    - src/03-results.qmd
+    - src/04-robustness.qmd
+    - src/05-conclusion.qmd
+
+format:
+  html:
+    theme: cosmo
+    code-fold: true
+    code-summary: "代码"
+    link-external-newwindow: true
+    smooth-scroll: true
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    section-divs: true
+    css: styles.css
+    fontsize: 0.95rem
+    linestretch: 1.6
+    html-math-method: mathjax
+    callout-appearance: simple
+
+website:
+  repo-url: "https://github.com/real-Yijun/dshw--panel"
+  repo-actions: [source, issue]
+  open-graph: true
+  twitter-card:
+    creator: "@real_Yijun"

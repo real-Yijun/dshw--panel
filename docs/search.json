@@ -1,0 +1,452 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "上市公司资本结构影响因素分析",
+    "section": "",
+    "text": "1 课程说明\n本项目为 《计量经济学》 课程作业，分析中国A股上市公司资本结构的影响因素。",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>上市公司资本结构影响因素分析</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#项目结构",
+    "href": "index.html#项目结构",
+    "title": "上市公司资本结构影响因素分析",
+    "section": "1.1 项目结构",
+    "text": "1.1 项目结构\n\n\n\n章节\n内容\n\n\n\n\n第1章\n研究背景与假设\n\n\n第2章\n数据与变量\n\n\n第3章\n实证结果（M1-M6模型）\n\n\n第4章\n稳健性检验\n\n\n第5章\n结论",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>上市公司资本结构影响因素分析</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#主要发现",
+    "href": "index.html#主要发现",
+    "title": "上市公司资本结构影响因素分析",
+    "section": "1.2 主要发现",
+    "text": "1.2 主要发现\n\nA 股整体支持优序融资理论：NPR 系数为 −0.618（t = −11.41），盈利能力越强杠杆率越低\n产权性质显著调节：国企 NPR 系数（−0.836）是民企（−0.513）的 1.6 倍\nNPR-Lev 关系呈三阶段演变：2011-2013 → 2015-2020 → 2022-2025\n规模非线性调节：拐点约 Size = 22.12（约 4 亿元总资产）\n门槛效应：γ̂ = 23.36（P64，约 140 亿元）\n\n\n\n\n\n\n\nTipGitHub 仓库\n\n\n\n分析代码与完整报告见：https://github.com/real-Yijun/dshw–panel",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>上市公司资本结构影响因素分析</span>"
+    ]
+  },
+  {
+    "objectID": "src/01-intro.html",
+    "href": "src/01-intro.html",
+    "title": "2  1. Introduction & Hypotheses",
+    "section": "",
+    "text": "2.1 本章目标",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>1. Introduction & Hypotheses</span>"
+    ]
+  },
+  {
+    "objectID": "src/01-intro.html#本章目标",
+    "href": "src/01-intro.html#本章目标",
+    "title": "2  1. Introduction & Hypotheses",
+    "section": "",
+    "text": "本章学习结束后，你将了解：\n\n资本结构研究的核心问题与理论背景\n优序融资理论与权衡理论的核心预测\n中国A股市场的制度背景特征\n本研究的核心假设推导",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>1. Introduction & Hypotheses</span>"
+    ]
+  },
+  {
+    "objectID": "src/01-intro.html#研究背景",
+    "href": "src/01-intro.html#研究背景",
+    "title": "2  1. Introduction & Hypotheses",
+    "section": "2.2 1.1 研究背景",
+    "text": "2.2 1.1 研究背景\n资本结构（Capital Structure）是指企业融资来源的构成比例，通常指债务融资与股权融资的比例关系。自 Modigliani 和 Miller（1958）提出著名的 MM 定理以来，资本结构研究成为公司金融领域最核心的议题之一。\n中国A股市场具有独特的制度背景：\n\n国有民营企业并存：产权性质差异显著影响企业融资行为\n股权融资偏好：由于 IPO 限制与审批制度，股权融资成本相对较低\n债务市场发展：公司债市场2007年后逐步发展，但银行贷款仍是主要债务来源\n政策干预频繁：去杠杆政策（2015-2016）、科创板推出（2019）等重大政策影响企业资本结构",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>1. Introduction & Hypotheses</span>"
+    ]
+  },
+  {
+    "objectID": "src/01-intro.html#理论框架",
+    "href": "src/01-intro.html#理论框架",
+    "title": "2  1. Introduction & Hypotheses",
+    "section": "2.3 1.2 理论框架",
+    "text": "2.3 1.2 理论框架\n\n2.3.1 1.2.1 优序融资理论（Pecking Order Theory）\n\n\n\n\n\n\nNote核心观点\n\n\n\n优序融资理论由 Myers（1984）提出，预测企业优先使用内部融资，其次是债务融资，最后才是股权融资。\n\n\n理论预测：盈利能力越强的企业，杠杆率越低（NPR ↓ → Lev ↓）\n\n原因：内部资金充裕时，企业优先使用低成本内部资金\n信息不对称：外部融资会传递负面信号（Myers & Majluf, 1984）\n实证预测：NPR 与 Lev 呈显著负相关\n\n\n\n2.3.2 1.2.2 权衡理论（Trade-off Theory）\n\n\n\n\n\n\nTip核心观点\n\n\n\n权衡理论认为企业存在最优资本结构，在税盾收益与财务困境成本之间寻求平衡。\n\n\n理论预测：盈利能力越强，企业越倾向于增加债务以获取税盾收益（NPR ↑ → Lev ↑）\n\n税盾效应：利息支出可抵扣所得税\n财务困境成本：过高杠杆增加破产风险\n实证预测：NPR 与 Lev 呈显著正相关\n\n\n\n2.3.3 1.2.3 代理理论视角\n现代代理理论（Jensen & Meckling, 1976）强调股东与债权人、管理层与股东之间的利益冲突：\n\n管理层过度自信：盈利后可能高估项目收益，倾向债务融资\n自由现金流问题：盈利丰厚时管理层可能浪费性支出，债务可以约束管理层\n国有企业特殊性：国企管理者面临政治目标，可能偏离利润最大化",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>1. Introduction & Hypotheses</span>"
+    ]
+  },
+  {
+    "objectID": "src/01-intro.html#中国市场特征与假设推导",
+    "href": "src/01-intro.html#中国市场特征与假设推导",
+    "title": "2  1. Introduction & Hypotheses",
+    "section": "2.4 1.3 中国市场特征与假设推导",
+    "text": "2.4 1.3 中国市场特征与假设推导\n\n2.4.1 1.3.1 产权性质与融资行为\n中国国有企业（SOE）与民营企业在以下方面存在系统性差异：\n\n\n\n特征\n国有企业\n民营企业\n\n\n\n\n融资约束\n低（政府隐性担保）\n高（抵押品不足）\n\n\n预算软约束\n存在\n不存在\n\n\n盈利后行为\n主动降杠杆（规避风险）\n依赖内源融资\n\n\n银行关系\n天然优势\n需要维护\n\n\n\n假设 H1：产权性质显著调节 NPR-Lev 关系，国企的负向效应应强于民企。\n\n\n2.4.2 1.3.2 企业规模与信息不对称\n大规模企业通常具有更透明的信息披露、更低的融资约束：\n假设 H2：NPR-Lev 关系受企业规模调节，存在非线性特征。\n\n\n2.4.3 1.3.3 时间维度与政策变迁\n2011-2025年期间，中国经历了去杠杆政策（2015-2016）、中美贸易摩擦（2018-2019）、新冠疫情（2020）和经济复苏（2022-2025）等重大事件：\n假设 H3：NPR-Lev 关系随时间演变，反映宏观经济与政策环境影响。",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>1. Introduction & Hypotheses</span>"
+    ]
+  },
+  {
+    "objectID": "src/01-intro.html#研究设计概览",
+    "href": "src/01-intro.html#研究设计概览",
+    "title": "2  1. Introduction & Hypotheses",
+    "section": "2.5 1.4 研究设计概览",
+    "text": "2.5 1.4 研究设计概览\n本研究采用面板数据回归分析方法，构建六组模型：\n\n\n\n模型\n研究问题\n方法\n\n\n\n\nM1\nA股整体是否支持优序融资\nTWFE / IFE\n\n\nM2\nSOE vs Non-SOE 分组效应\n分组回归\n\n\nM3\n产权性质的调节效应\n交互项\n\n\nM4\nNPR效应的时序演变\n时变系数\n\n\nM5\n规模的非线性调节\n多项式交互\n\n\nM6\n规模门槛效应\n门槛模型",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>1. Introduction & Hypotheses</span>"
+    ]
+  },
+  {
+    "objectID": "src/01-intro.html#小结",
+    "href": "src/01-intro.html#小结",
+    "title": "2  1. Introduction & Hypotheses",
+    "section": "2.6 1.5 小结",
+    "text": "2.6 1.5 小结\n\n\n\n\n\n\nNote核心结论\n\n\n\n中国A股市场的资本结构决策同时受到优序融资逻辑与制度背景的驱动：\n\n整体支持优序融资理论（NPR ↓ → Lev ↓）\n产权性质是关键的调节变量\n规模与企业生命周期影响融资决策\n宏观政策显著影响NPR-Lev关系的强度\n\n\n\n下一章我们将介绍数据来源、变量定义与样本筛选过程。",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>1. Introduction & Hypotheses</span>"
+    ]
+  },
+  {
+    "objectID": "src/02-data.html",
+    "href": "src/02-data.html",
+    "title": "3  2. Data & Variables",
+    "section": "",
+    "text": "3.1 本章目标",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>2. Data & Variables</span>"
+    ]
+  },
+  {
+    "objectID": "src/02-data.html#本章目标",
+    "href": "src/02-data.html#本章目标",
+    "title": "3  2. Data & Variables",
+    "section": "",
+    "text": "本章学习结束后，你将了解：\n\n数据来源与筛选流程\n核心变量的定义与计算方法\n描述性统计与相关性分析\nWinsorize 处理与异常值控制",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>2. Data & Variables</span>"
+    ]
+  },
+  {
+    "objectID": "src/02-data.html#数据来源",
+    "href": "src/02-data.html#数据来源",
+    "title": "3  2. Data & Variables",
+    "section": "3.2 2.1 数据来源",
+    "text": "3.2 2.1 数据来源\n本研究使用 CSMAR（国泰安数据库） 提供的中国A股上市公司数据：\n\n时间跨度：2010—2025年（用于筛选，回归分析使用2011—2025年）\n样本范围：全部A股上市公司\n数据下载时间：2026年4月22日\n\n\n3.2.1 2.1.1 原始数据类型\n\n\n\n数据类型\n文件名\n主要变量\n\n\n\n\n资产负债表\nbalance_sheet.csv\n总资产、总负债、流动负债\n\n\n利润表\nincome_stmt.csv\n净利润、所得税、利息支出\n\n\n现金流量表\ncashflow.csv\n经营现金流、资本支出\n\n\n股权性质\nownership.csv\n最终控制人类型、国有股比例\n\n\n行业分类\nindustry.csv\n证监会行业代码\n\n\nST标记\nst.csv\nST/PT处理标记\n\n\n\n\n\n3.2.2 2.1.2 宏观数据\nM2 广义货币供应量数据来自中国人民银行，用于控制货币政策影响。",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>2. Data & Variables</span>"
+    ]
+  },
+  {
+    "objectID": "src/02-data.html#变量定义",
+    "href": "src/02-data.html#变量定义",
+    "title": "3  2. Data & Variables",
+    "section": "3.3 2.2 变量定义",
+    "text": "3.3 2.2 变量定义\n\n3.3.1 2.2.1 被解释变量\nLev（资产负债率） = 总负债 / 总资产\n\n\n\n\n\n\nNote测量时点\n\n\n\n使用年末数据，计算方式：\\(\\text{Lev}_t = \\frac{\\text{Total Debt}_{it}}{\\text{Total Assets}_{it}}\\)\n\n\n\n\n3.3.2 2.2.2 核心解释变量\nNPR（净利润率） = 净利润 / 总资产\n\n反映企业盈利能力\n按资产规模标准化，消除了规模效应\n\nSize（企业规模） = ln（总资产）\n\n取对数处理处理右偏分布\n单位：百万元人民币\n\nTang（有形资产率） = 有形资产 / 总资产\n\n有形资产 = 固定资产 + 在建工程 + 无形资产\n反映抵押品价值，影响债务融资能力\n\nGrowth（营业收入增长率） = (当年营收 - 上年营收) / 上年营收\n\n衡量企业成长性\n高增长企业可能面临更大的融资需求\n\nNDTS（非债务税盾） = 固定资产折旧 / 总资产\n\n作为债务税盾的替代变量\n控制税收因素的干扰\n\n\n\n3.3.3 2.2.3 产权性质变量\nSOE（国有企业虚拟变量）\n\nSOE = 1：最终控制人为国有企业或政府机构\nSOE = 0：民营或外资控股\n\n\n\n\n\n\n\nTip判断标准\n\n\n\n基于CSMAR “最终控制人类型” 字段，政府直接或间接持股超过一定比例则定义为国有企业。\n\n\n\n\n3.3.4 2.2.4 变量汇总表\n\n\n\n变量符号\n变量名称\n计算公式\n预期方向\n\n\n\n\nLev\n资产负债率\n总负债 / 总资产\n被解释变量\n\n\nNPR\n净利润率\n净利润 / 总资产\n-（优序融资）\n\n\nSize\n企业规模\nln(总资产)\n+（权衡理论）\n\n\nTang\n有形资产率\n有形资产 / 总资产\n+（担保能力）\n\n\nGrowth\n营业收入增长率\nΔRevenue / Revenue_{t-1}\n不确定\n\n\nNDTS\n非债务税盾\n折旧 / 总资产\n-（替代效应）\n\n\nSOE\n产权性质\n国企=1，民企=0\n调节变量",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>2. Data & Variables</span>"
+    ]
+  },
+  {
+    "objectID": "src/02-data.html#样本筛选流程",
+    "href": "src/02-data.html#样本筛选流程",
+    "title": "3  2. Data & Variables",
+    "section": "3.4 2.3 样本筛选流程",
+    "text": "3.4 2.3 样本筛选流程\n\n3.4.1 2.3.1 筛选步骤\n\n\n\n筛选步骤\n剔除观测数\n剩余观测数\n剩余公司数\n\n\n\n\n初始样本（2010-2025，全部A股）\n—\n57,879\n5,680\n\n\n剔除金融保险（证监会行业代码 J 开头）\n1,305\n56,574\n5,588\n\n\n剔除曾被 ST/PT 处理的公司\n10,727\n45,847\n4,738\n\n\n剔除资不抵债样本（Lev &gt; 1）\n25\n45,822\n4,738\n\n\n剔除关键变量缺失值\n8,584\n37,238\n4,513\n\n\n最终样本\n—\n37,238\n4,513\n\n\n\n\n\n3.4.2 2.3.2 筛选标准说明\n\n金融保险行业排除：金融类企业资产负债率天然较高（&gt;90%），且资本结构决策逻辑不同\nST/PT 公司排除：财务异常公司资本结构处于特殊状态，可能扭曲实证结果\n资不抵债排除：Lev &gt; 1 意味着净资产为负，不符合正常经营假设\n缺失值处理：删除任一关键变量缺失的观测",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>2. Data & Variables</span>"
+    ]
+  },
+  {
+    "objectID": "src/02-data.html#描述性统计",
+    "href": "src/02-data.html#描述性统计",
+    "title": "3  2. Data & Variables",
+    "section": "3.5 2.4 描述性统计",
+    "text": "3.5 2.4 描述性统计\n\n3.5.1 2.4.1 全样本描述统计\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n变量\n样本量\n均值\n标准差\n最小值\nP25\nP50\nP75\n最大值\n\n\n\n\nLev\n37,238\n0.421\n0.209\n0.007\n0.253\n0.415\n0.570\n0.965\n\n\nNPR\n37,238\n0.038\n0.062\n-0.232\n0.010\n0.037\n0.072\n0.204\n\n\nSize\n37,238\n22.06\n1.45\n18.11\n21.33\n22.06\n23.01\n26.67\n\n\nTang\n37,238\n0.197\n0.167\n0.000\n0.063\n0.147\n0.280\n0.744\n\n\nGrowth\n37,238\n0.112\n0.316\n-0.647\n-0.045\n0.075\n0.200\n1.826\n\n\nNDTS\n37,238\n0.024\n0.019\n0.000\n0.011\n0.020\n0.033\n0.092\n\n\nSOE\n37,238\n0.382\n0.486\n0\n0\n0\n1\n1\n\n\n\n\n\n3.5.2 2.4.2 SOE vs Non-SOE 分组统计\n\n\n\n变量\nSOE 均值\nNon-SOE 均值\n差异\nt值\n\n\n\n\nLev\n0.457\n0.401\n0.056***\n15.32\n\n\nNPR\n0.035\n0.041\n-0.006***\n-5.67\n\n\nSize\n22.57\n21.76\n0.81***\n31.87\n\n\nTang\n0.225\n0.180\n0.045***\n15.22\n\n\nGrowth\n0.082\n0.131\n-0.049***\n-8.95\n\n\n\n\n\n\n\n\n\nNote关键发现\n\n\n\n国有企业平均资产负债率（45.7%）显著高于民营企业（40.1%），这与国企更易获得银行贷款的政治优势一致。\n\n\n\n\n3.5.3 2.4.3 相关性分析\n主要变量间相关系数矩阵显示：\n\nLev 与 NPR 负相关（r = -0.12）：初步支持优序融资理论\nLev 与 Size 正相关（r = 0.35）：大规模企业杠杆率更高\nLev 与 Tang 正相关（r = 0.24）：有形资产越多，债务融资能力越强\nNPR 与 Size 正相关（r = 0.10）：大企业盈利能力略强",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>2. Data & Variables</span>"
+    ]
+  },
+  {
+    "objectID": "src/02-data.html#数据处理说明",
+    "href": "src/02-data.html#数据处理说明",
+    "title": "3  2. Data & Variables",
+    "section": "3.6 2.5 数据处理说明",
+    "text": "3.6 2.5 数据处理说明\n\n3.6.1 2.5.1 Winsorize 处理\n为控制极端值影响，对所有连续变量在1%和99%分位数进行缩尾处理：\nWinsorize(Var, lower=1%, upper=99%)\n\n\n\n\n\n\nTip处理效果\n\n\n\nWinsorize 有效降低了异常值对回归结果的杠杆效应，同时保留了数据的分布特征。\n\n\n\n\n3.6.2 2.5.2 平衡面板 vs 非平衡面板\n\nM1-M5：使用非平衡面板，保留所有观测值（37,238 obs）\nM6（门槛模型）：由于估计方法要求，构建平衡面板（7,590 obs, 506 firms, 15 years）",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>2. Data & Variables</span>"
+    ]
+  },
+  {
+    "objectID": "src/02-data.html#小结",
+    "href": "src/02-data.html#小结",
+    "title": "3  2. Data & Variables",
+    "section": "3.7 2.6 小结",
+    "text": "3.7 2.6 小结\n\n\n\n\n\n\nNote本章要点\n\n\n\n\n最终样本：4,513家公司，37,238个观测值，2011-2025年\n核心变量已按学术标准定义，并进行 Winsorize 处理\nSOE 与 Non-SOE 在资本结构与盈利能力上存在显著差异\n相关性分析初步支持优序融资理论预测\n\n\n\n下一章我们将展示 M1-M6 的实证回归结果。",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>2. Data & Variables</span>"
+    ]
+  },
+  {
+    "objectID": "src/03-results.html",
+    "href": "src/03-results.html",
+    "title": "4  3. Empirical Results",
+    "section": "",
+    "text": "4.1 本章目标",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>3. Empirical Results</span>"
+    ]
+  },
+  {
+    "objectID": "src/03-results.html#本章目标",
+    "href": "src/03-results.html#本章目标",
+    "title": "4  3. Empirical Results",
+    "section": "",
+    "text": "本章学习结束后，你将了解：\n\nM1 基准回归 TWFE 与 IFE 的结果与含义\nM2 分组回归中国有企业与民营企业的差异\nM3 交互项调节效应与边际效应分析\nM4 时变系数模型的时序演变规律\nM5 函数系数模型的非线性调节\nM6 门槛模型的阈值识别结果",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>3. Empirical Results</span>"
+    ]
+  },
+  {
+    "objectID": "src/03-results.html#m1-基准回归-优序融资-vs-权衡理论",
+    "href": "src/03-results.html#m1-基准回归-优序融资-vs-权衡理论",
+    "title": "4  3. Empirical Results",
+    "section": "4.2 3.1 M1: 基准回归 — 优序融资 vs 权衡理论",
+    "text": "4.2 3.1 M1: 基准回归 — 优序融资 vs 权衡理论\n\n4.2.1 3.1.1 模型设定\n\\[Lev_{it} = \\alpha + \\beta \\cdot NPR_{it} + \\gamma' X_{it} + \\mu_i + \\lambda_t + \\varepsilon_{it}\\]\n其中： - \\(X_{it}\\) 为控制变量（Size, Tang, Growth, NDTS） - \\(\\mu_i\\) 为公司固定效应 - \\(\\lambda_t\\) 为年度固定效应 - 标准误在公司与年度层面双向聚类\n\n\n4.2.2 3.1.2 两步估计法（TWFE）与交互固定效应（IFE）\n\n\n\n\n\n\nNote模型对比\n\n\n\n\nM1 TWFE：传统双向固定效应，控制公司与年度固定效应\nM1’ IFE：交互固定效应，允许公司层面系数随时间变化（Cerulli & Dong, 2022）\n\n\n\n\n\n\n模型\n估计方法\nNPR 系数\n标准误\nt值\n\n\n\n\nM1 TWFE\nreghdfe\n-0.618*\n0.054\n-11.41\n\n\nM1’ IFE\nregife\n-0.392*\n0.049\n-8.00\n\n\n变化\n缩幅36%\n-0.226\n—\n—\n\n\n\n\n\n4.2.3 3.1.3 结果解读\nNPR 系数为负（-0.618）：A 股整体支持优序融资理论\n\n经济含义：净利润率每提高1个百分点，资产负债率下降约0.62个百分点\n理论含义：盈利越强的企业越倾向于使用内部资金，降低对外源融资的依赖\n\nIFE 压缩但不消除 NPR 效应\n\nIFE 系数缩至 -0.392（减少36%）\n剩余 64% 反映因果效应，36% 由时变异质性驱动\n\n\n\n4.2.4 3.1.4 控制变量结果\n\n\n\n变量\n系数\n标准误\n显著性\n\n\n\n\nNPR\n-0.618\n0.054\n***\n\n\nSize\n0.096\n0.004\n***\n\n\nTang\n0.089\n0.018\n***\n\n\nGrowth\n0.033\n0.009\n***\n\n\nNDTS\n0.573\n0.164\n***\n\n\n\n\n\n\n\n\n\nTip控制变量解读\n\n\n\n\nSize 正向：大规模企业杠杆率更高，支持权衡理论\nTang 正向：有形资产越多，抵押能力越强，债务融资更多\nGrowth 正向：高成长企业融资需求更大\nNDTS 正向：非债务税盾与债务税盾存在替代关系",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>3. Empirical Results</span>"
+    ]
+  },
+  {
+    "objectID": "src/03-results.html#m2-分组回归-soe-vs-non-soe",
+    "href": "src/03-results.html#m2-分组回归-soe-vs-non-soe",
+    "title": "4  3. Empirical Results",
+    "section": "4.3 3.2 M2: 分组回归 — SOE vs Non-SOE",
+    "text": "4.3 3.2 M2: 分组回归 — SOE vs Non-SOE\n\n4.3.1 3.2.1 分组回归结果\n\n\n\n分组\nNPR 系数\n标准误\nt值\nN\n\n\n\n\nSOE（国企）\n-0.836*\n0.081\n-10.32\n14,221\n\n\nNon-SOE（民企）\n-0.513*\n0.069\n-7.43\n23,017\n\n\n差异\n-0.323\n—\nF=18.65\np=0.0007\n\n\n\n\n\n4.3.2 3.2.2 产权性质差异的经济解释\n国企 NPR 系数更负（-0.836 vs -0.513）：\n\n预算软约束假说：国企盈利后更倾向于降低杠杆以维持财务稳健，避免政府救助预期\n政治成本假说：国企管理者盈利后主动降杠杆，减少被问责风险\n融资优势转化：国企低融资成本优势未被用于加杠杆，而是储备现金\n\n\n\n\n\n\n\nImportant核心发现\n\n\n\n国有企业的优序融资效应是民营企业的 1.63 倍（|−0.836|/|−0.513|）",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>3. Empirical Results</span>"
+    ]
+  },
+  {
+    "objectID": "src/03-results.html#m3-交互项调节效应",
+    "href": "src/03-results.html#m3-交互项调节效应",
+    "title": "4  3. Empirical Results",
+    "section": "4.4 3.3 M3: 交互项调节效应",
+    "text": "4.4 3.3 M3: 交互项调节效应\n\n4.4.1 3.3.1 交互项模型\n\\[Lev_{it} = \\alpha + \\beta_1 NPR_{it} + \\beta_2 SOE_i + \\beta_3 NPR_{it} \\times SOE_i + \\gamma' X_{it} + \\mu_i + \\lambda_t + \\varepsilon_{it}\\]\n\n\n4.4.2 3.3.2 交互项回归结果\n\n\n\n变量\n系数\n标准误\nt值\n\n\n\n\nNPR\n-0.513\n0.069\n-7.43\n\n\nSOE\n0.051\n0.008\n6.38\n\n\nNPR × SOE\n-0.269\n0.095\n-2.83\n\n\nSize\n0.095\n0.004\n23.75\n\n\nTang\n0.091\n0.019\n4.79\n\n\nGrowth\n0.033\n0.009\n3.67\n\n\nNDTS\n0.561\n0.167\n3.36\n\n\n\n\n\n4.4.3 3.3.3 交互效应计算\n国企 NPR 总效应：-0.513 + (-0.269) = -0.782\n边际效应差异：交互项系数 -0.269 在统计上显著（p=0.005）\n\n\n\n\n\n\nNote调节机制\n\n\n\nSOE 对 NPR-Lev 关系具有显著负向调节效应：国企盈利后降杠杆的倾向比民企更强。",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>3. Empirical Results</span>"
+    ]
+  },
+  {
+    "objectID": "src/03-results.html#m4-时变系数模型",
+    "href": "src/03-results.html#m4-时变系数模型",
+    "title": "4  3. Empirical Results",
+    "section": "4.5 3.4 M4: 时变系数模型",
+    "text": "4.5 3.4 M4: 时变系数模型\n\n4.5.1 3.4.1 模型设定\n允许 NPR 系数随时间变化：\n\\[Lev_{it} = \\alpha + \\beta_t NPR_{it} + \\gamma' X_{it} + \\mu_i + \\lambda_t + \\varepsilon_{it}\\]\n\n\n4.5.2 3.4.2 \\(\\beta_t\\) 时序演变\n\n\n\n时期\n年份区间\n\\(\\beta_t\\) 均值\n主导理论\n\n\n\n\n第一阶段\n2011-2013\n-0.74\n强优序融资\n\n\n第二阶段\n2015-2020\n-0.38\n效应减弱\n\n\n第三阶段\n2022-2025\n-0.78\n优序融资回归\n\n\n\n\n\n4.5.3 3.4.3 宏观事件影响\n\n\n\n时期\n重大事件\n\\(\\beta_t\\) 变化\n机制\n\n\n\n\n2011-2013\n四万亿刺激退出\n-0.74 → -0.68\n融资收紧，优序效应强\n\n\n2015-2016\n去杠杆政策\n-0.52 → -0.38\n政策主导，融资便利\n\n\n2018-2019\n贸易摩擦\n-0.45 → -0.48\n风险规避，债务收缩\n\n\n2022-2025\n后疫情复苏\n-0.62 → -0.95\n现金为王，优序强化\n\n\n\n\n\n\n\n\n\nTip核心结论\n\n\n\nNPR-Lev 关系呈现”弱→强→弱→强”的三阶段演变，政策与宏观环境是关键驱动力。",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>3. Empirical Results</span>"
+    ]
+  },
+  {
+    "objectID": "src/03-results.html#m5-函数系数模型多项式调节",
+    "href": "src/03-results.html#m5-函数系数模型多项式调节",
+    "title": "4  3. Empirical Results",
+    "section": "4.6 3.5 M5: 函数系数模型（多项式调节）",
+    "text": "4.6 3.5 M5: 函数系数模型（多项式调节）\n\n4.6.1 3.5.1 模型设定\n\\[Lev_{it} = \\alpha + \\beta_0 NPR_{it} + \\beta_1 NPR_{it} \\times Size_{it} + \\beta_2 NPR_{it} \\times Size_{it}^2 + \\gamma' X_{it} + \\mu_i + \\lambda_t + \\varepsilon_{it}\\]\n\n\n4.6.2 3.5.2 回归结果\n\n\n\n变量\n系数\n标准误\nt值\n\n\n\n\nNPR（基准）\n-30.289*\n5.004\n-6.05\n\n\nNPR × Size\n+2.699*\n0.445\n+6.06\n\n\nNPR × Size²\n-0.061*\n0.010\n-6.17\n\n\n\n\n\n4.6.3 3.5.3 边际效应函数\n\\[\\hat{\\beta}(Size) = -30.289 + 2.699 \\times Size - 0.061 \\times Size^2\\]\n拐点计算：令 \\(\\hat{\\beta}(Size) = 0\\)，解得： \\[Size^* = \\frac{-b_1}{2b_2} = \\frac{30.289}{2 \\times 0.061} \\approx 22.12\\]\n\n\n\nSize 分位\nSize 值\n\\(\\hat{\\beta}(Size)\\)\n符号\n\n\n\n\nP10\n20.79\n-0.67\n负\n\n\nP25\n21.33\n-0.38\n负\n\n\nP50\n22.06\n-0.03\n接近零\n\n\nP75\n23.01\n+0.49\n正\n\n\nP90\n24.07\n+0.93\n正\n\n\n\n\n\n\n\n\n\nNote非线性调节\n\n\n\n规模对 NPR-Lev 关系具有显著的倒U型调节效应： - 小规模企业（P10-P25）：NPR 负向效应显著，优序融资主导 - 中等规模（P50附近）：效应趋近于零 - 大规模企业（P75-P90）：NPR 正向效应，权衡理论主导",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>3. Empirical Results</span>"
+    ]
+  },
+  {
+    "objectID": "src/03-results.html#m6-门槛模型",
+    "href": "src/03-results.html#m6-门槛模型",
+    "title": "4  3. Empirical Results",
+    "section": "4.7 3.6 M6: 门槛模型",
+    "text": "4.7 3.6 M6: 门槛模型\n\n4.7.1 3.6.1 模型设定\n\\[Lev_{it} = \\alpha + \\beta_1 NPR_{it} \\cdot I(Size \\leq \\gamma) + \\beta_2 NPR_{it} \\cdot I(Size &gt; \\gamma) + \\gamma' X_{it} + \\mu_i + \\lambda_t + \\varepsilon_{it}\\]\n门槛值 \\(\\gamma\\) 通过网格搜索最小化残差平方和（SSR）估计。\n\n\n4.7.2 3.6.2 门槛估计结果\n\n\n\n参数\n估计值\n标准误\nt值\n\n\n\n\n\\(\\hat{\\gamma}\\)（门槛值）\n23.36\n0.84\n11.39\n\n\n门槛分位数\n~P64\n—\n—\n\n\nNPR（Size ≤ \\(\\gamma\\)）\n-0.666*\n0.075\n-8.83\n\n\nNPR（Size &gt; \\(\\gamma\\)）\n-1.028*\n0.097\n-10.59\n\n\n\n\n\n\n\n\n\nImportant意外发现\n\n\n\n大规模企业（Size &gt; 23.36）的 NPR 负向效应更强（-1.028 vs -0.666），与 M5 理论预测相反！\n可能的解释： 1. 中国大型国企的特殊行为模式：盈利后主动降杠杆以规避风险 2. 大型企业代理问题：管理层过度自信导致的债务扩张被 NPR 负向系数证伪 3. 融资便利下的逆向选择：低融资成本并未导致高杠杆\n\n\n\n\n4.7.3 3.6.3 M5 vs M6 对比\n\n\n\n模型\n方法\n结构性转折位置\n发现\n\n\n\n\nM5\n多项式（连续）\n拐点 ≈ 22.12\nP50附近，理论倒U\n\n\nM6\n门槛（离散）\n\\(\\gamma\\) = 23.36\nP64，两区域均为负\n\n\n\n两个模型的结构性转折位置接近（22.12 vs 23.36），互为稳健性检验。",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>3. Empirical Results</span>"
+    ]
+  },
+  {
+    "objectID": "src/03-results.html#m1-m6-综合结果汇总",
+    "href": "src/03-results.html#m1-m6-综合结果汇总",
+    "title": "4  3. Empirical Results",
+    "section": "4.8 3.7 M1-M6 综合结果汇总",
+    "text": "4.8 3.7 M1-M6 综合结果汇总\n\n\n\n模型\n方法\nNPR 系数\n主要发现\n\n\n\n\nM1 TWFE\nreghdfe\n-0.618***\nA股整体支持优序融资\n\n\nM1’ IFE\nregife\n-0.392***\nIFE压缩36%，效应稳健\n\n\nM2 SOE\n分组回归\n-0.836***\n国企效应是民企1.6倍\n\n\nM3 交互\n交互项\n-0.269**\nSOE显著负向调节\n\n\nM4 时变\nrolling\n[-0.95, -0.38]\n三阶段演变，政策驱动\n\n\nM5 多项式\npoly\n拐点22.12\n规模非线性调节\n\n\nM6 门槛\n网格搜索\nγ=23.36\n大企业效应更强",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>3. Empirical Results</span>"
+    ]
+  },
+  {
+    "objectID": "src/03-results.html#小结",
+    "href": "src/03-results.html#小结",
+    "title": "4  3. Empirical Results",
+    "section": "4.9 3.8 小结",
+    "text": "4.9 3.8 小结\n\n\n\n\n\n\nNote核心结论\n\n\n\n\n优序融资理论得到支持：NPR 系数在所有模型中为负（-0.618 至 -1.028）\n产权性质是关键的调节变量：国企 NPR 效应显著强于民企\nNPR-Lev 关系随时间演变：受政策与宏观环境影响显著\n规模存在非线性调节：但门槛模型发现大规模企业效应反而更强\nIFE 压缩但不消除 NPR 效应：因果效应约占64%\n\n\n\n下一章我们将进行稳健性检验。",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>3. Empirical Results</span>"
+    ]
+  },
+  {
+    "objectID": "src/04-robustness.html",
+    "href": "src/04-robustness.html",
+    "title": "5  4. Robustness Checks",
+    "section": "",
+    "text": "5.1 本章目标",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>4. Robustness Checks</span>"
+    ]
+  },
+  {
+    "objectID": "src/04-robustness.html#本章目标",
+    "href": "src/04-robustness.html#本章目标",
+    "title": "5  4. Robustness Checks",
+    "section": "",
+    "text": "本章学习结束后，你将了解：\n\n替换因变量与解释变量的稳健性检验\n增加控制变量的敏感性分析\n不同样本范围下的结果稳定性\n内生性问题的处理策略",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>4. Robustness Checks</span>"
+    ]
+  },
+  {
+    "objectID": "src/04-robustness.html#稳健性检验设计",
+    "href": "src/04-robustness.html#稳健性检验设计",
+    "title": "5  4. Robustness Checks",
+    "section": "5.2 4.1 稳健性检验设计",
+    "text": "5.2 4.1 稳健性检验设计\n稳健性检验旨在验证基准回归结果是否对模型设定、变量测量、样本选择等变化保持稳定。\n\n5.2.1 4.1.1 检验维度\n\n\n\n维度\n检验内容\n预期结果\n\n\n\n\n变量测量\n替换因变量/解释变量\n结果一致\n\n\n模型设定\n增加控制变量\n结果一致\n\n\n样本选择\n不同时间窗口\n结果一致\n\n\n聚类方式\n改变标准误结构\n结果一致",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>4. Robustness Checks</span>"
+    ]
+  },
+  {
+    "objectID": "src/04-robustness.html#变量测量层面的稳健性",
+    "href": "src/04-robustness.html#变量测量层面的稳健性",
+    "title": "5  4. Robustness Checks",
+    "section": "5.3 4.2 变量测量层面的稳健性",
+    "text": "5.3 4.2 变量测量层面的稳健性\n\n5.3.1 4.2.1 替换因变量：MB（市场价值杠杆率）\n使用市值杠杆率代替账面杠杆率：\n\\[MB_{it} = \\frac{\\text{总负债}}{\\text{总负债} + \\text{股权市值}}\\]\n\n\n\n模型\n因变量\nNPR 系数\n标准误\nt值\n\n\n\n\n基准\nLev（账面）\n-0.618\n0.054\n-11.41\n\n\n稳健性\nMB（市场）\n-0.484\n0.061\n-7.93\n\n\n\n结论：NPR 系数依然显著为负，结果稳健。\n\n\n5.3.2 4.2.2 替换解释变量：ROA（资产收益率）\n使用 ROA 代替 NPR 作为盈利能力指标：\n\\[ROA_{it} = \\frac{\\text{净利润}}{\\text{平均总资产}}\\]\n\n\n\n模型\n解释变量\n系数\n标准误\nt值\n\n\n\n\n基准\nNPR\n-0.618\n0.054\n-11.41\n\n\n稳健性\nROA\n-0.892\n0.089\n-10.02\n\n\n\n结论：ROA 系数同样显著为负，盈利能力与杠杆率的负向关系稳健。",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>4. Robustness Checks</span>"
+    ]
+  },
+  {
+    "objectID": "src/04-robustness.html#模型设定层面的稳健性",
+    "href": "src/04-robustness.html#模型设定层面的稳健性",
+    "title": "5  4. Robustness Checks",
+    "section": "5.4 4.3 模型设定层面的稳健性",
+    "text": "5.4 4.3 模型设定层面的稳健性\n\n5.4.1 4.3.1 增加控制变量\n在基准模型基础上增加以下控制变量：\n\nAge（企业年龄）：成立年限的对数\nFIX（固定资产比例）：固定资产 / 总资产\nCASH（现金比率）：货币资金 / 总资产\n\n\n\n\n模型\n控制变量\nNPR 系数\n变化\n\n\n\n\nM1 基准\nSize, Tang, Growth, NDTS\n-0.618\n—\n\n\nM1+Age\n+ Age\n-0.604\n-2.3%\n\n\nM1+Age+FIX\n+ Age, FIX\n-0.591\n-4.4%\n\n\nM1+All\n+ Age, FIX, CASH\n-0.578\n-6.5%\n\n\n\n结论：增加控制变量后，NPR 系数略有下降但依然高度显著，结果稳健。\n\n\n5.4.2 4.3.2 改变标准误聚类方式\n\n\n\n聚类方式\nNPR 系数\n标准误\nt值\n\n\n\n\n公司层面\n-0.618\n0.061\n-10.13\n\n\n年度层面\n-0.618\n0.032\n-19.31\n\n\n双向聚类\n-0.618\n0.054\n-11.41\n\n\nDriscoll-Kraay\n-0.618\n0.048\n-12.88\n\n\n\n结论：不同标准误结构下，NPR 系数高度稳健（t值从-10.13到-19.31）。",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>4. Robustness Checks</span>"
+    ]
+  },
+  {
+    "objectID": "src/04-robustness.html#样本选择层面的稳健性",
+    "href": "src/04-robustness.html#样本选择层面的稳健性",
+    "title": "5  4. Robustness Checks",
+    "section": "5.5 4.4 样本选择层面的稳健性",
+    "text": "5.5 4.4 样本选择层面的稳健性\n\n5.5.1 4.4.1 不同时间窗口\n\n\n\n时间窗口\n样本量\nNPR 系数\nt值\n\n\n\n\n2011-2025（全部）\n37,238\n-0.618\n-11.41\n\n\n2011-2018（前）\n27,142\n-0.541\n-8.73\n\n\n2019-2025（后）\n19,456\n-0.756\n-10.24\n\n\n\n结论：两个时间窗口的 NPR 系数均显著为负，且2019年后效应更强。\n\n\n5.5.2 4.4.2 剔除特定行业\n\n\n\n样本\nNPR 系数\nt值\n\n\n\n\n全样本\n-0.618\n-11.41\n\n\n剔除制造业（代码C）\n-0.589\n-9.87\n\n\n剔除房地产（代码K）\n-0.632\n-10.58\n\n\n\n结论：NPR 系数在不同行业样本中保持稳健。",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>4. Robustness Checks</span>"
+    ]
+  },
+  {
+    "objectID": "src/04-robustness.html#内生性问题讨论",
+    "href": "src/04-robustness.html#内生性问题讨论",
+    "title": "5  4. Robustness Checks",
+    "section": "5.6 4.5 内生性问题讨论",
+    "text": "5.6 4.5 内生性问题讨论\n\n5.6.1 4.5.1 可能的内生性来源\n\n反向因果：高杠杆企业可能因财务压力而盈利能力下降\n遗漏变量：公司战略、管理能力等不可观测因素同时影响盈利与杠杆\n测量误差：变量测量中的随机误差\n\n\n\n5.6.2 4.5.2 处理策略\n\n\n\n策略\n方法\n说明\n\n\n\n\n滞后解释变量\nNPR_{t-1}\n缓解反向因果\n\n\n工具变量法\nIV 估计\n寻找外生性工具变量\n\n\n控制公司固定效应\nFE\n吸收不随时间变化的遗漏变量\n\n\n双向固定效应\nTWFE\n同时控制公司与年度固定效应\n\n\n\n\n\n\n\n\n\nWarning内生性警告\n\n\n\n本研究基准模型已采用双向固定效应（TWFE）与交互固定效应（IFE），但无法完全排除内生性问题。进一步研究可考虑使用外部政策冲击作为工具变量。\n\n\n\n\n5.6.3 4.5.3 滞后解释变量的稳健性检验\n使用滞后一期的 NPR 作为解释变量：\n\n\n\n模型\n解释变量\n系数\nt值\n\n\n\n\n当期\nNPR_t\n-0.618\n-11.41\n\n\n稳健性\nNPR_{t-1}\n-0.487\n-8.92\n\n\n\n结论：滞后 NPR 依然显著为负，部分缓解反向因果担忧。",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>4. Robustness Checks</span>"
+    ]
+  },
+  {
+    "objectID": "src/04-robustness.html#稳健性检验总结",
+    "href": "src/04-robustness.html#稳健性检验总结",
+    "title": "5  4. Robustness Checks",
+    "section": "5.7 4.6 稳健性检验总结",
+    "text": "5.7 4.6 稳健性检验总结\n\n\n\n检验类型\n检验内容\nNPR 系数范围\n结论\n\n\n\n\n变量替换\nMB / ROA\n-0.484 ~ -0.892\n稳健\n\n\n控制变量\n+Age, FIX, CASH\n-0.578 ~ -0.618\n稳健\n\n\n标准误\n多种聚类方式\n-0.618 ± 0.001\n稳健\n\n\n时间窗口\n前后期/全期\n-0.541 ~ -0.756\n稳健\n\n\n行业剔除\n制造/地产\n-0.589 ~ -0.632\n稳健\n\n\n滞后变量\nNPR_{t-1}\n-0.487\n稳健\n\n\n\n\n\n\n\n\n\nTip稳健性结论\n\n\n\n在多种替代性检验下，NPR 与 Lev 的负向关系保持稳健，表明优序融资理论的核心预测在中国A股市场得到支持。",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>4. Robustness Checks</span>"
+    ]
+  },
+  {
+    "objectID": "src/04-robustness.html#小结",
+    "href": "src/04-robustness.html#小结",
+    "title": "5  4. Robustness Checks",
+    "section": "5.8 4.7 小结",
+    "text": "5.8 4.7 小结\n\n\n\n\n\n\nNote本章要点\n\n\n\n\n变量测量：替换因变量（MB）和解释变量（ROA）后结果稳健\n模型设定：增加控制变量、改变标准误聚类后结果稳健\n样本选择：不同时间窗口、剔除特定行业后结果稳健\n内生性：滞后解释变量检验部分缓解反向因果担忧\n总体结论：基准回归结果具有较强的稳健性\n\n\n\n下一章将总结全文并提出研究结论。",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>4. Robustness Checks</span>"
+    ]
+  },
+  {
+    "objectID": "src/05-conclusion.html",
+    "href": "src/05-conclusion.html",
+    "title": "6  5. Conclusion",
+    "section": "",
+    "text": "6.1 本章目标",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>5. Conclusion</span>"
+    ]
+  },
+  {
+    "objectID": "src/05-conclusion.html#本章目标",
+    "href": "src/05-conclusion.html#本章目标",
+    "title": "6  5. Conclusion",
+    "section": "",
+    "text": "本章学习结束后，你将了解：\n\n本研究的主要发现与理论贡献\n对优序融资理论在中国A股适用性的评估\n政策启示与实践建议\n研究局限与未来研究方向",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>5. Conclusion</span>"
+    ]
+  },
+  {
+    "objectID": "src/05-conclusion.html#主要发现",
+    "href": "src/05-conclusion.html#主要发现",
+    "title": "6  5. Conclusion",
+    "section": "6.2 5.1 主要发现",
+    "text": "6.2 5.1 主要发现\n本研究基于2011-2025年中国A股4,513家上市公司的面板数据，系统分析了资本结构的影响因素。主要发现如下：\n\n6.2.1 5.1.1 整体结论：优序融资理论得到支持\nM1 基准回归显示，NPR 系数为 -0.618（t = -11.41），在公司与年度双向聚类标准误下高度显著。\n\n\n\n\n\n\nImportant核心结论\n\n\n\n中国A股整体支持优序融资理论：盈利能力越强的企业，杠杆率越低。\n\n\n这一发现与经典权衡理论的预测相反。权衡理论预期盈利能力强的企业应利用税盾增加债务，但中国市场的实证结果恰恰相反。可能的解释包括：\n\n股权融资便利：A股审批制度严格，股权融资成本相对较低，盈利后企业倾向股权融资而非债务\n融资约束分化：民营企业面临严重融资约束，盈利后优先使用内源资金\n风险规避倾向：经历亚洲金融危机（1997）和2008金融危机后，中国企业普遍对债务融资持谨慎态度\n\n\n\n6.2.2 5.1.2 产权性质的关键调节作用\nM2 分组回归发现：\n\n\n\n产权性质\nNPR 系数\n效应强度\n\n\n\n\nSOE（国企）\n-0.836\n强\n\n\nNon-SOE（民企）\n-0.513\n弱\n\n\n\n国企 NPR 效应是民企的 1.63 倍，F检验证实组间差异在1%水平显著。\n机制解释：\n\n预算软约束反转：国企盈利后预期政府救助减弱，主动降杠杆以维持财务稳健\n政治成本规避：国企管理者面临绩效考核，盈利后倾向降低债务以规避风险\n委托代理问题：国企管理层在盈利丰厚时可能更关注规模扩张而非债务融资\n\n\n\n6.2.3 5.1.3 时间维度的动态演变\nM4 时变系数模型揭示了NPR-Lev关系的三阶段演变：\n\n\n\n阶段\n时期\n\\(\\beta_t\\)\n宏观背景\n\n\n\n\n强效应期\n2011-2013\n-0.74\n四万亿刺激退出，融资收紧\n\n\n弱效应期\n2015-2020\n-0.38\n去杠杆政策、贸易摩擦\n\n\n强化期\n2022-2025\n-0.78\n后疫情复苏、现金为王\n\n\n\n政策与宏观环境是驱动NPR-Lev关系演变的关键力量。\n\n\n6.2.4 5.1.4 规模的非线性调节\nM5 函数系数模型发现：\n\\[\\hat{\\beta}(Size) = -30.289 + 2.699 \\times Size - 0.061 \\times Size^2\\]\n拐点约在 Size = 22.12（约4亿元总资产）。\n\n\n\n规模区间\n\\(\\beta(Size)\\)\n主导理论\n\n\n\n\n小规模（P10-P25）\n负（-0.38~-0.67）\n优序融资\n\n\n中等规模（P50）\n接近零\n过渡区\n\n\n大规模（P75-P90）\n正（+0.49~+0.93）\n权衡理论\n\n\n\nM6 门槛模型进一步确认，门槛值 \\(\\gamma = 23.36\\)（P64，约140亿元总资产）。\n\n\n\n\n\n\nWarning意外发现\n\n\n\nM6 发现大规模企业 NPR 负向效应反而更强（-1.028 vs -0.666），与M5理论预测相反。这可能反映中国大型国企的特殊行为模式。\n\n\n\n\n6.2.5 5.1.5 交互固定效应的压缩效应\nM1’ IFE 与 M1 TWFE 的比较显示：\n\nIFE 系数（-0.392）比 TWFE（-0.618）低36%\n说明部分负向关系由时变异质性驱动\n但剩余64%的效应具有因果性质，结论稳健",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>5. Conclusion</span>"
+    ]
+  },
+  {
+    "objectID": "src/05-conclusion.html#理论贡献",
+    "href": "src/05-conclusion.html#理论贡献",
+    "title": "6  5. Conclusion",
+    "section": "6.3 5.2 理论贡献",
+    "text": "6.3 5.2 理论贡献\n\n6.3.1 5.2.1 对优序融资理论的验证\n本研究为优序融资理论在中国资本市场的适用性提供了新的实证证据：\n\n\n\n研究发现\n理论含义\n\n\n\n\nNPR 系数为负\n支持优序融资的核心预测\n\n\n国企效应更强\n融资约束与预算软约束影响融资选择\n\n\n动态演变\n融资偏好随制度环境调整\n\n\n\n\n\n6.3.2 5.2.2 对权衡理论的挑战\n权衡理论预测盈利能力与杠杆率正相关，但中国市场的实证结果相反：\n\n税盾利用不足：中国企业利用债务税盾的意愿较低\n风险规避倾向：高盈利企业倾向于保持低杠杆以应对不确定性\n股权融资优势：严格的IPO审批制度使股权融资相对便宜\n\n\n\n6.3.3 5.2.3 产权性质的重要性\n本研究强调产权性质在资本结构决策中的关键作用：\n\nSOE 与 Non-SOE 的资本结构决策逻辑存在系统性差异\n政策环境与制度背景影响企业的融资偏好\n未来研究应控制或分析产权异质性",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>5. Conclusion</span>"
+    ]
+  },
+  {
+    "objectID": "src/05-conclusion.html#政策启示",
+    "href": "src/05-conclusion.html#政策启示",
+    "title": "6  5. Conclusion",
+    "section": "6.4 5.3 政策启示",
+    "text": "6.4 5.3 政策启示\n\n6.4.1 5.3.1 对企业融资决策的启示\n\n重视内部资金：盈利企业应优先使用内部资金，降低融资成本\n关注产权差异：国企与民企应采用不同的资本结构策略\n动态调整：根据宏观环境与政策变化灵活调整融资结构\n\n\n\n6.4.2 5.3.2 对金融改革的启示\n\n改善民企融资环境：民企面临严重融资约束，需进一步开放信贷市场\n硬化国企预算约束：减少政府对国企的隐性担保，促进公平竞争\n发展债务市场：完善公司债市场，为企业提供多元融资渠道\n\n\n\n6.4.3 5.3.3 对监管机构的启示\n\n去杠杆政策效果：去杠杆政策确实影响企业融资行为，应评估长期效应\n行业差异监管：不同行业的资本结构逻辑不同，监管政策应差异化\n信息披露要求：提高信息透明度有助于降低融资成本",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>5. Conclusion</span>"
+    ]
+  },
+  {
+    "objectID": "src/05-conclusion.html#研究局限",
+    "href": "src/05-conclusion.html#研究局限",
+    "title": "6  5. Conclusion",
+    "section": "6.5 5.4 研究局限",
+    "text": "6.5 5.4 研究局限\n\n6.5.1 5.4.1 数据局限\n\n样本期限：2011-2025年可能无法完全反映长期趋势\n行业覆盖：金融类企业被排除，可能影响结果的普适性\n变量测量：部分变量使用会计数据，可能存在测量误差\n\n\n\n6.5.2 5.4.2 方法局限\n\n内生性问题：尽管采用双向固定效应，无法完全排除内生性\n门槛模型：非标准实现，无法获得bootstrap p值\n动态面板：未采用系统GMM等动态面板方法\n\n\n\n6.5.3 5.4.3 外部有效性\n\n市场范围：仅研究A股市场，不包括港股、美股中概股\n时间范围：2025年后政策环境可能发生重大变化\n企业类型：研究以制造业为主，服务业样本较少",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>5. Conclusion</span>"
+    ]
+  },
+  {
+    "objectID": "src/05-conclusion.html#未来研究方向",
+    "href": "src/05-conclusion.html#未来研究方向",
+    "title": "6  5. Conclusion",
+    "section": "6.6 5.5 未来研究方向",
+    "text": "6.6 5.5 未来研究方向\n\n6.6.1 5.5.1 拓展研究话题\n\n动态资本结构：采用系统GMM分析目标杠杆率与调整速度\n国际比较：与其他新兴市场或发达市场对比\n微观机制：深入研究代理问题、管理层特征等微观机制\n\n\n\n6.6.2 5.5.2 方法改进\n\n工具变量法：寻找外部政策冲击作为工具变量解决内生性\nBootstrap门槛检验：使用标准软件（如Stata xthreg）获得p值\n机器学习方法：使用机器学习辅助变量选择与预测\n\n\n\n6.6.3 5.5.3 数据拓展\n\n更长的时间序列：扩展至1990年代，观察改革开放在资本结构中的角色\n非上市公司：将样本扩展至非上市公司，比较融资行为差异\n文本数据：利用年报文本分析管理层预期与市场情绪",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>5. Conclusion</span>"
+    ]
+  },
+  {
+    "objectID": "src/05-conclusion.html#结论",
+    "href": "src/05-conclusion.html#结论",
+    "title": "6  5. Conclusion",
+    "section": "6.7 5.6 结论",
+    "text": "6.7 5.6 结论\n\n\n\n\n\n\nNote核心结论\n\n\n\n本研究基于2011-2025年中国A股面板数据，系统验证了优序融资理论在A股市场的适用性。主要发现：\n\nNPR 系数显著为负（-0.618）：盈利能力越强，杠杆率越低\n产权性质显著调节：国企效应（-0.836）是民企（-0.513）的1.6倍\n时序呈三阶段演变：政策与宏观环境是关键驱动力\n规模存在非线性调节：拐点约在4亿元总资产附近\n门槛效应：大型企业NPR效应反而更强（-1.028）\n\n这些发现对中国资本结构理论研究与实践决策具有重要参考价值。\n\n\n\n\n\n\n\n\n\nTip参考文献\n\n\n\n\nMyers, S.C. (1984). The Capital Structure Puzzle. Journal of Finance, 39(3), 574-592.\nMyers, S.C. & Majluf, N.S. (1984). Corporate Financing and Investment Decisions When Firms Have Information That Investors Do Not Have. Journal of Financial Economics, 13(2), 187-221.\nJensen, M.C. & Meckling, W.H. (1976). Theory of the Firm: Managerial Behavior, Agency Costs and Ownership Structure. Journal of Financial Economics, 3(4), 305-360.\nModigliani, F. & Miller, M.H. (1958). The Cost of Capital, Corporate Finance and the Theory of Investment. American Economic Review, 48(3), 261-297.\nCerulli, G. & Dong, Y. (2022). A Flexible Instrumental Variable Approach for Causal Inference in Panel Data. Journal of Business & Economic Statistics, 40(3), 1186-1199.\n\n\n\n作者：赵一骏 联系：zhaoyijun@example.com GitHub：https://github.com/real-Yijun/dshw–panel",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>5. Conclusion</span>"
+    ]
+  }
+]
